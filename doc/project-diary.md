@@ -77,7 +77,7 @@ Progress:
 - MA began reading official documentation on the Cheri C/C++ programming standards.
 
 To do:
-- MA to set up a wireless connection to the Morello board.
+- MA to retry setting up a wireless internet connection to the Morello board.
 - MA to read much more documentation on the Cheri C/C++ programming standards.
 - MA to create a simple Pure Cap application, meaning it will only use Cheri C/C++ capabilities/pointers.
 
@@ -94,4 +94,10 @@ Progress:
 - MA created the `project-diary.md` and `meetings.md` files, which should continuously be updated to reflect progress and meetings respectively.
 
 Blockers:
-- MA was unable to interact with the remote server for the repository on GitLab. Cloning the repository worked, but the fetch and push commands would hang in the terminal. This seemed to be a problem on GitLab because the issue eventually resolved itself.
+- MA was unable to interact with the remote server for the repository on GitLab. Cloning the repository worked, but the fetch and push commands would hang in the terminal. This issue eventually resolved itself, so it was likely to be a problem with the GitLab servers.
+
+### Tuesday 18<sup>th</sup>:
+Progress:
+- MA built a basic but slightly more advanced C application on the Morello board using structs, pointers, and an extra source and header file. MA received help with this from a university colleague who is more familiar with C programming.
+- MA connected the Morello board to the router via ethernet and set up the ability to SSH into the machine wirelessly from another device. MA received help with this from a work colleague.
+- MA created a document outlining the potential future risks/unknowns for the project.
