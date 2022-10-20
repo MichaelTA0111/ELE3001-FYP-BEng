@@ -98,6 +98,23 @@ Blockers:
 
 ### Tuesday 18<sup>th</sup>:
 Progress:
-- MA built a basic but slightly more advanced C application on the Morello board using structs, pointers, and an extra source and header file. MA received help with this from a university colleague who is more familiar with C programming.
+- MA built a basic C application on the Morello board using structs, pointers, and an external source and header file. MA received help with this from a university colleague who is more familiar with C programming. This application is PureCap.
 - MA connected the Morello board to the router via ethernet and set up the ability to SSH into the machine wirelessly from another device. MA received help with this from a work colleague.
 - MA created a document outlining the potential future risks/unknowns for the project.
+
+To do:
+- MA to set up a static IP address on the Morello board to make connecting via SSH simpler.
+
+### Wednesday 19<sup>th</sup>:
+Progress:
+- MA researched pointers in the C programming language.
+- MA read more of the official Cheri C/C++ style guide document.
+- MA installed MicroEMACS on to the Morello board.
+- MA set up a static IP for the Morello board.
+
+To do:
+- MA to investigate the Arm Development Studio Morello Edition IDE for easier development on the Morello board.
+
+### Thursday 20<sup>th</sup>:
+Progress:
+- MA created a Gantt chart for scheduling the project.
