@@ -48,9 +48,26 @@ Discussion:
 - SSH highlighted the 40 CATS weighting of the project. MA confirmed his weekly plan for working on the project. SSH/MA agreed a fortnightly meeting on Friday mornings.
 - MA provided an overview of the work completed to date - the CheriBSD OS has been installed on the Morello board.
 - SSH provided a link to EEECS GitLab with documentation on using git.
- 
 
 Actions:
 - SSH to schedule the fortnightly Teams meeting.
 - MA to set up a project repository on GitLab for documentation and developmental work.
 - MA to set up the network connection on the Morello board.
+
+### Friday 21<sup>st</sup> October 2022 (11am) – MA/SSH/TS
+Discussion:
+- MA explained progress is almost complete for setup of PC, the only exception being investigating into an IDE.
+- MA enquired about the health and safety form. SSH said that everything is low risk and computer based
+- SSH asked for the plan on testing the packet processing applications. TS explained that the details are not yet certain and will depend on the resulting applications. SSH suggested the use of a traffic generator.
+- MA referred SSH to the Gantt chart and risks/unknowns documents that he created and uploaded to the GitLab repository.
+- MA explained that he has compiled some simple CHERI PureCap applications on the Morello board.
+- TS mentioned the 4-parties communicating with respect to this project.
+- TS asked if SSH wanted to meet with the DSbD program/Digital Catapult team. SSH was interested but did not guarantee attendance for every meeting.
+
+Actions:
+- MA to send SSH completed health and safety form.
+- SSH to provide feedback on the Gantt chart and risks/unknowns documents.
+- TS to forward a meeting invitation to SSH with the DSbD program team.
+- MA to attempt to set up an IDE on the PC.
+- MA to create another C program to help develop programming skills in that language.
+- MA to investigate the current usability of the DPDK framework on CHERI-enabled architecture.

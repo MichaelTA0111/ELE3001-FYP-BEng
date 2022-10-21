@@ -118,3 +118,15 @@ To do:
 ### Thursday 20<sup>th</sup>:
 Progress:
 - MA created a Gantt chart for scheduling the project.
+
+### Friday 21<sup>st</sup>:
+Progress:
+- MA, SSH, and TS had a meeting discussing recent progress.
+- MA sent completed health and safety form to SSH
+- TS forwarded a meeting invitation to SSH with the DSbD program team.
+
+To do:
+- SSH to provide feedback on the Gantt chart and risks/unknowns documents.
+- MA to attempt to set up an IDE on the PC.
+- MA to create another C program to help develop programming skills in that language.
+- MA to investigate the current usability of the DPDK framework on CHERI-enabled architecture.
