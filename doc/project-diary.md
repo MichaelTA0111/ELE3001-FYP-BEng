@@ -122,7 +122,7 @@ Progress:
 ### Friday 21<sup>st</sup>:
 Progress:
 - MA, SSH, and TS had a meeting discussing recent progress.
-- MA sent completed health and safety form to SSH
+- MA sent completed health and safety form to SSH.
 - TS forwarded a meeting invitation to SSH with the DSbD program team.
 
 To do:
@@ -130,3 +130,32 @@ To do:
 - MA to attempt to set up an IDE on the PC.
 - MA to create another C program to help develop programming skills in that language.
 - MA to investigate the current usability of the DPDK framework on CHERI-enabled architecture.
+
+### Tuesday 25<sup>th</sup>:
+Progress:
+- MA investigated the Arm Development Studio Morello Edition IDE. The software is for use on Linux systems and simulates running on the Morello board, therefore it is not usable for this project.
+- MA completed a beginner Vim tutorial.
+- MA planned and started to implement another C program (PureCap) which uses more advanced C features.
+
+To do:
+- MA to complete the more advanced C program.
+
+### Wednesday 26<sup>th</sup>:
+Progress:
+- MA found a list of sample DPDK applications on the official DPDK website.
+- MA continued working on the more advanced C program.
+
+To do:
+- MA to attempt to compile and run a sample Cheri C/C++ PureCap DPDK application on the Morello board.
+
+### Friday 28<sup>th</sup>:
+Progress:
+- MA finished the more advanced C program.
+- MA created a git repository on GitLab to push the C program to.
+
+Blockers:
+- MA attempted to link his EEECS GitLab account with the Morello board via SSH but authentication didn't work.
+
+To do:
+- MA to try to fix the git connection on the Morello board.
+- MA to push the source code of the C program to the remote GitLab servers.
