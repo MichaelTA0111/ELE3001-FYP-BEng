@@ -1,0 +1,3 @@
+[submodule "student-grades"]
+	path = student-grades
+	url = git@gitlab.eeecs.qub.ac.uk:40266651/student-grades.git
