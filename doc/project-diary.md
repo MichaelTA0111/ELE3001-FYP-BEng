@@ -135,7 +135,7 @@ To do:
 Progress:
 - MA investigated the Arm Development Studio Morello Edition IDE. The software is for use on Linux systems and simulates running on the Morello board, therefore it is not usable for this project.
 - MA completed a beginner Vim tutorial.
-- MA planned and started to implement another C program (PureCap) which uses more advanced C features.
+- MA planned and started to implement another C program (PureCap) which uses more advanced C features. This program involves reading in a list of students, modules, and grades each from their own text file. There should also be input to determine what information to display as a result.
 
 To do:
 - MA to complete the more advanced C program.
@@ -159,3 +159,11 @@ Blockers:
 To do:
 - MA to try to fix the git connection on the Morello board.
 - MA to push the source code of the C program to the remote GitLab servers.
+
+## November
+
+### Tuesday 1<sup>st</sup>:
+Progress:
+- MA fixed the issue with GitLab. The issue was actually relating to the internet connectivity breaking after setting the static IP rather than the SSH key pairing.
+- MA pushed the C application to GitLab.
+- MA improved the C application based on feedback from a friend and added a Makefile.
