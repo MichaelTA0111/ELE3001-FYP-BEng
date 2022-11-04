@@ -71,3 +71,18 @@ Actions:
 - MA to attempt to set up an IDE on the PC.
 - MA to create another C program to help develop programming skills in that language.
 - MA to investigate the current usability of the DPDK framework on CHERI-enabled architecture.
+
+## November
+
+### Friday 4<sup>th</sup> November 2022 (11am) – MA/SSH
+Discussion:
+- MA explained the blocker with GitLab was actually an issue with the static IP assignment to the Morello board.
+- SSH asked if the health and safety form was successfully added to git. MA said that there was a merge request which he was able to merge successfully.
+- SSH asked about the C program that MA had been working on. MA explained the functionality and gave access to the GitLab repository to SSH.
+- MA asked about the Gantt chart feedback. SSH explained how to fill in the Gantt chart, including assessment date milestones, meetings, and that overlapping task dates is allowed.
+- MA explained that there is an interim report due for the DSbD team by 9<sup>th</sup> December.
+
+Actions:
+- MA to create updated Gantt chart taking feedback into account.
+- MA to attempt to install DPDK.
+- MA to run DPDK helloworld example application.
