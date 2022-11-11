@@ -12,9 +12,11 @@ The initials used are as follows:
 - MA = Michael Allen
 - SSH = Sandra Scott-Hayward
 - GC = Gareth Conway
-- TS = Tim Silversides
-- GB = Gavin Burns
-- DP = Darren Prehaye
+- PT = Tim (Pytilia)
+- PE = Eileen (Pytilia)
+- DCG = Gavin (Digital Catapult)
+- DCD = Darren (Digital Catapult)
+- DCP = Paul (Digital Catapult)
 
 ## September
 
@@ -24,30 +26,30 @@ Progress:
 
 ### Friday 30<sup>th</sup>:
 Progress:
-- Technical check-in meeting with MA, TS, GB, and DP where a lot of early questions about the project were answered.
+- Technical check-in meeting with MA, PT, DCG, and DCD where a lot of early questions about the project were answered.
 
 To do:
 - MA to unbox the Morello board on Tuesday.
-- TS and MA to meet on Tuesday to give a more in-depth explanation on the work to be undertaken for the project.
+- PT and MA to meet on Tuesday to give a more in-depth explanation on the work to be undertaken for the project.
 
 ## October
 
 ### Tuesday 4<sup>th</sup>:
 Progress:
-- Meeting with MA and TS where a lot of the project background details were explained.
+- Meeting with MA and PT where a lot of the project background details were explained.
 - MA unboxed the PC which contained the Morello board.
 - MA connected relevant cables to power on the PC, along with a monitor, keyboard, and mouse.
 - MA powered on the PC and connected to the console via a debug USB cable connected to his laptop.
-- GB sent a list of questions about the project specifications that did not get addressed in the meeting from Friday 30<sup>th</sup> September due to time constraints.
+- DCG sent a list of questions about the project specifications that did not get addressed in the meeting from Friday 30<sup>th</sup> September due to time constraints.
 
 To do:
 - MA to copy relevant binary files onto the mounted microSD card on the Morello board.
 - MA to create a bootable USB drive with a CheriBSD image file.
-- TS to answer questions asked by GB.
+- PT to answer questions asked by DCG.
 
 ### Wednesday 5<sup>th</sup>:
 Progress:
-- TS answered any outstanding questions from GB about the project specifications.
+- PT answered any outstanding questions from DCG about the project specifications.
 - MA set the local date and time on the PC, which were the first successful commands issued via the debug connection.
 - MA cloned the prebuilt Morello firmware binaries and copied them into the mounted microSD card.
 - MA unsuccessfully tried to build a disk image for CheriBSD using the official cheribuild Python script.
@@ -121,9 +123,9 @@ Progress:
 
 ### Friday 21<sup>st</sup>:
 Progress:
-- MA, SSH, and TS had a meeting discussing recent progress.
+- MA, SSH, and PT had a meeting discussing recent progress.
 - MA sent completed health and safety form to SSH.
-- TS forwarded a meeting invitation to SSH with the DSbD program team.
+- PT forwarded a meeting invitation to SSH with the DSbD program team.
 
 To do:
 - SSH to provide feedback on the Gantt chart and risks/unknowns documents.
@@ -167,3 +169,44 @@ Progress:
 - MA fixed the issue with GitLab. The issue was actually relating to the internet connectivity breaking after setting the static IP rather than the SSH key pairing.
 - MA pushed the C application to GitLab.
 - MA improved the C application based on feedback from a friend and added a Makefile.
+
+### Thursday 3<sup>rd</sup>:
+Progress:
+- MA unsuccessfully attempted to build DPDK on his MacBook.
+
+### Friday 4<sup>th</sup>:
+Progress:
+- MA created an updated Gantt chart taking the feedback from SSH into account.
+- MA and SSH had their fortnightly meeting.
+- MA downloaded the DPDK framework on to the Morello board, however he could not install DPDK due to the `atomic` library being missing.
+- MA, PT, DCG, DCD, and DCP had their monthly meeting.
+- MA joined DPDK Slack group.
+- MA unsuccessfully attempted to find and install the `atomic` library onto the Morello board.
+- MA talked with PE who worked with DPDK and CHERI on the fixed virtual platform (FVP). PE gave a broad overview of some of the problems she encountered when trying to run DPDK. PE sent MA links to relevant GitHub repositories with some small changes made to run DPDK on CHERI-enabled architecture, as well as a confluence page about running DPDK.
+
+To do:
+- MA to follow the newly received documentation and attempt to install the DPDK framework again.
+
+### Tuesday 8<sup>th</sup>:
+Progress:
+- MA unsuccessfully attempted to build DPDK locally on the Morello board using the `meson` command.
+- MA spent time debugging the DPDK build process.
+
+To do:
+- MA to continue trying to debug building DPDK locally.
+
+### Wednesday 9<sup>th</sup>:
+Progress:
+- MA spent more time debugging the DPDK build process.
+- MA successfully completed the first of two build steps for the DPDK library. This involved successfully using the `meson` program to build DPDK.
+- MA unsuccessfully attempted to complete the second build process for the DPDK library. This involves using the `ninja` program to build the final library.
+- MA spent time debugging the next step of the DPDK build process.
+- MA and TS discovered that someone else from the DSbD Slack had attempted to build the DPDK library in recent months.
+
+Blockers:
+- MA expects it will take a long time to debug the `ninja` build process.
+
+To do:
+- MA to contact the man from the DSbD Slack who had worked with building DPDK recently to see if he was able to fully build DPDK.
+- MA to continue trying to complete the `ninja` build process.
+- If the `ninja` build process continues to cause issues, MA to set up the CheriBSD FVP and attempt cross-compilation to match the working method from Pytilia's old codebase.
