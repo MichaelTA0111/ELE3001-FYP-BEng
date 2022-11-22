@@ -210,3 +210,38 @@ To do:
 - MA to contact the man from the DSbD Slack who had worked with building DPDK recently to see if he was able to fully build DPDK.
 - MA to continue trying to complete the `ninja` build process.
 - If the `ninja` build process continues to cause issues, MA to set up the CheriBSD FVP and attempt cross-compilation to match the working method from Pytilia's old codebase.
+
+### Monday 14<sup>th</sup>:
+Progress:
+- MA installed the Morello SDK using the `cheribuild` tool.
+
+### Tuesday 15<sup>th</sup>:
+Progress:
+- MA continued trying to build the DPDK library on the Morello board.
+- MA attempted to cross compile DPDK (PureCap) using the Morello SDK.
+
+To do:
+- MA to continue working on the cross compilation attempt for the Morello board.
+
+### Wednesday 16<sup>th</sup>:
+Progress:
+- MA continued trying to build the DPDK library on the Morello board with assistance from PT.
+
+### Thursday 17<sup>th</sup>:
+Progress:
+- MA briefly attended a DSbD peer to peer meeting, however he had to leave early due to a conflict.
+
+To do:
+- MA to watch through the meeting recording from the peer to peer session.
+
+### Friday 18<sup>th</sup>:
+Progress:
+- MA and SSH had their fortnightly project meeting to discuss progress.
+- MA continued trying to build the DPDK library on the Morello board.
+- MA retried cross-compiling DPDK and was able to successfully complete the compilation, however he did not test running a sample application to ensure they work correctly.
+
+To do:
+- MA to attempt to run included DPDK sample applications.
+
+### Tuesday 22<sup>nd</sup>:
+Progress:

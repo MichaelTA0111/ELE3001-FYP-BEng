@@ -100,3 +100,16 @@ Discussion:
 
 Actions:
 - MA to join DSbD Slack group.
+
+### Friday 18<sup>th</sup> November 2022 (11am) - MA/SSH
+Discussion:
+- MA described the DPDK porting progress so far - the meson build is completing, and progress is slowly being made to complete the ninja build.
+- MA explained that TS had been helping with the debugging process and is relatively confident that the build can be completed in a reasonable time frame.
+- MA said that the timeline for successfully completing the DPDK port is not a certainty. SSH said that if this is still causing issues by the next fortnightly meeting then the impact on the project will need to be more thoroughly assessed.
+- SSH asked about the DSbD peer to peer session meeting. MA explained that he could only attend a short period of it because of a conflict, but the general overview was about compiling different programs on CHERI, both PureCap and Hybrid.
+- SSH asked about the interim report and MA said that it looked relatively straightforward to complete.
+- MA mentioned that the man who recently worked on DPDK for the Morello board was primarily using the SPDK library instead and didn't get to finish compiling DPDK. In spite of that, he made himself open for contacting to help MA when required.
+
+Actions:
+- MA to continue trying to build the DPDK library on Morello.
+- MA to watch the recording of the DSbD peer to peer meeting.
