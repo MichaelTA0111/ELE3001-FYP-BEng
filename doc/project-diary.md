@@ -245,3 +245,29 @@ To do:
 
 ### Tuesday 22<sup>nd</sup>:
 Progress:
+- MA watched the peer to peer meeting recording. The meeting contained a lot of information helping with the compilation and debugging processes for CHERI hybrid and PureCap applications, amongst other helpful pieces of information.
+- MA attempted to run the cross-compiled DPDK library, however it did not run due to an undefined symbol error.
+- MA tried debugging the cross-compilation. A compiler flag to use emulated thread local storage is what causes the error when running on the physical hardware, however removing the flag causes the cross-compilation to fail.
+
+To do:
+- MA to try compiling directly on the Morello board with the knowledge from the near miss from the cross-compilation.
+
+### Wednesday 23<sup>rd</sup>:
+Progress:
+- MA manually searched through the compilation logs to find differences between the DPDK builds.
+- MA found a bug with the meson build which did not disable drivers when compiling on the Morello board, although the drivers were successfully disabled for the cross-compilation.
+- MA manually removed the excess drivers and disabled atomic functionality which allowed the build to successfully complete on the board.
+- MA successfully ran DPDK `helloworld` and `Limelight_DPDK_Build` sample applications on the Morello board. However, this had to be done with flags which imply that only one process can be used.
+- MA found that there are 2 libraries called `contigmem` and `nic_uio` which need to be loaded to the kernel for BSD users of DPDK, which may resolve the errors relating to multiple processes.
+
+To do:
+- MA to attempt to build and load the relevant kernel modules to the Morello board to see if allows multiple processes to run.
+
+### Friday 25<sup>th</sup>:
+Progress:
+- MA researched into BSD kernel modules and how to use them.
+- MA attempted to build the kernel modules required for DPDK use, however they did not work due to a PureCap issue.
+- PE gave MA copies of the kernel modules from the working FVP to use on the Morello board. The modules did not work because the modules were built for a different version of CheriBSD.
+
+To do:
+- MA to retry attempting to build the kernel module in hybrid rather than PureCap.
