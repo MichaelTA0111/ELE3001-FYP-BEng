@@ -271,3 +271,42 @@ Progress:
 
 To do:
 - MA to retry attempting to build the kernel module in hybrid rather than PureCap.
+
+### Tuesday 29<sup>th</sup>:
+Progress:
+- MA attempted to build the kernel modules in hybrid but could not find a way to change the compiler settings to build a hybrid ABI.
+- MA built a new image of the CheriBSD OS with the missing kernel modules installed directly, using the `cheribuild` tool.
+
+To do:
+- MA to flash a USB drive with the new CheriBSD image and boot from it on the Morello board.
+
+### Wednesday 30<sup>th</sup>:
+Progress:
+- MA flashed a USB with the updated CheriBSD image.
+- MA booted the Morello board using the new CheriBSD image and attempted to run the DPDK sample applications. This new image did not have a compiler installed so a copy of the built applications from the old image was used instead.
+- MA ran the DPDK applications. They did not fail due to missing kernel modules, however they failed because of CHERI capability errors.
+- MA unsuccessfully attempted to fix the CHERI specific errors.
+
+To do:
+- MA to continue trying to fix the CHERI capability errors.
+
+## December
+
+### Monday 5<sup>th</sup>:
+Progress:
+- MA continued trying to debug the errors running the DPDK sample applications with huge pages.
+- MA and PT completed the interim report due for the Digital Catapult team, except for a slideshow/video which is required for one of the questions.
+- MA and SSH had a rescheduled fortnightly meeting discussing progress and what steps to take next.
+
+To do:
+- MA to meet with PT to discuss the future plans for this project and what next steps should be taken.
+- MA to create a slideshow for the Digital Catapult interim report and submit the finished report.
+- MA to begin the first draft of the interim report due for QUB for the next meeting with SSH.
+
+### Tuesday 6<sup>th</sup>:
+Progress:
+- MA created a Keynote presentation for the Digital Catapult interim report and submitted the finished report.
+- MA and PT had a meeting regarding the project timeline/specifications.
+
+To do:
+- MA to start work on the single process CHERI-enabled application.
