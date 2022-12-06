@@ -113,3 +113,31 @@ Discussion:
 Actions:
 - MA to continue trying to build the DPDK library on Morello.
 - MA to watch the recording of the DSbD peer to peer meeting.
+
+## December
+
+### Monday 5<sup>th</sup> December 2022 (3:30pm) - MA/SSH
+Discussion:
+- MA discussed the progress to date with SSH. DPDK can run using one process however, it cannot run multiple processes simultaneously.
+- MA explained that the debugging process had been taking much longer than expected. SSH and MA agreed that the number of hours per week spent on this process has been more than desired.
+- SSH asked for a comparison between the current progress and the scheduled timeline. MA explained that the expected progress for October and November had mostly been completed in October, however the December progress was blocked by porting DPDK which was not accounted for in the initial timeline and was given an estimate of 2 weeks in the Gantt chart.
+- MA explained that the main task for December could be completed with the current state of the DPDK library however the January task could not. SSH suggested MA meet with PT in order to discuss any potential restructuring required in the project timeline.
+- MA showed the sample DPDK applications in use on the Morello board.
+- SSH asked about the sample DPDK application created by PE and how it differs from the single process application to be created by MA. MA explained that this needs discussion with PT, however a new application will need to be created.
+- MA asked about the interim report due for QUB. SSH explained that because the deadline is the 16<sup>th</sup> January, MA should have an initial outline ready for the next meeting and have a completed draft for when the Christmas break ends for feedback.
+
+To do:
+- MA to meet with PT about the project timeline and discuss whether any changes need to be made.
+- MA to start work on the QUB interim report.
+
+### Tuesday 6<sup>th</sup> December 2022 (12:00pm) - MA/PT
+Discussion:
+- MA asked about the project timeline and if it was still achievable. PT explained that the goals are still realistic.
+- MA and PT discussed the issue with multiple processes using DPDK. PT suggested that the January goal for using an IPC model could still be achieved because only one DPDK process needs to be used, even though multiple processes need to run on the PC.
+- MA asked for some clarification on what is expected with the IPC model application. PT explained that there would need to be consumer applications which communicate with the DPDK application. PT recommended using UDP for this.
+- MA asked whether the IPC application should be compiled in PureCap or Hybrid. PT said that either would be acceptable for the project.
+- MA asked about how the single process application which he is to create differs from the example application created by PE. PT stated that MA only needs to create a new application which will make a fair comparison for the IPC based application that he also has to create.
+- PT explained that using a `pcap` file for traffic is sufficient, however interacting with live traffic can be a stretch goal if time permits.
+
+To do:
+- MA to begin work on his new single process CHERI-enabled application.
