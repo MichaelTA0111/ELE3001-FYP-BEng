@@ -1,3 +1,6 @@
 [submodule "student-grades"]
-	path = student-grades
+	path = src/student-grades
 	url = git@gitlab.eeecs.qub.ac.uk:40266651/student-grades.git
+[submodule "DPDK-v20-11-1"]
+	path = src/DPDK-v20-11-1
+	url = git@gitlab.eeecs.qub.ac.uk:40266651/DPDK-v20-11-1.git
