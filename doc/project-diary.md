@@ -310,3 +310,10 @@ Progress:
 
 To do:
 - MA to start work on the single process CHERI-enabled application.
+
+### Wednesday 7<sup>th</sup>:
+Progress:
+- MA created a new git fork of DPDK for his port to the Morello board.
+- MA created a new git repository for the single process CHERI-enabled application. This project currently only has boilerplate code from example apps.
+- MA researched into `pcap` files and how to create them. MA found a Python library called `pylibpcap` which can be used to interact with these files.
+- MA generated some test `pcap` files which he was able to use as input for an example DPDK application.
