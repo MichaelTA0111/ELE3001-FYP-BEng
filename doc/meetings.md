@@ -5,7 +5,6 @@ This is a log of all meetings taken with regard to the final year project.
 Details of day-by-day progress can be found in the `project-diary.md` file.
 
 Names will be abbreviated for more concise writing.
-Unless otherwise stated, assume th
 The initials used are as follows:
 - MA = Michael Allen
 - SSH = Sandra Scott-Hayward
@@ -141,3 +140,45 @@ Discussion:
 
 To do:
 - MA to begin work on his new single process CHERI-enabled application.
+
+### Wednesday 21<sup>st</sup> December 2022 (11:30pm) - MA/SSH
+Discussion:
+- MA showed SSH the current draft of the interim report. SSH provided the following feedback:
+  - Change the objectives section into a summary/introduction section with more background information on the project.
+  - Remove the issues section and include a subsection detailing issues when relevant.
+  - Add a summary at the beginning of sections explaining what is included.
+  - Restructure the sentences from first person to passive.
+  - Condense long sentences with a lot of redundancy.
+  - Convert some paragraphs of text into bullet points.
+  - Always reference an included image in the surrounding text.
+  - Don't include too many images in each subsection.
+  - Remove the appendices section.
+  - Include short subsections on work which was completed but was not necessarily used in the project, such as building a kernel.
+  - Include references when relevant.
+  - Remember to update the current situation/future plans section in January to keep it accurate.
+
+To do:
+- MA to send his semester 2 timetable to SSH.
+- SSH to schedule a new meeting time for semester 2.
+- MA to implement feedback and complete a full draft of the interim report for at least a week in advance of the January 16<sup>th</sup> deadline.
+
+## January
+
+### Monday 9<sup>th</sup> January 2023 (10am) - MA/SSH
+Discussion:
+- MA showed SSH the interim report. SSH provided the following feedback:
+  - Rotate the page containing the Gantt chart to landscape.
+  - Add an outline for the current date on the Gantt chart.
+  - Manually set the text to black to stop the automatic red colour in a section.
+  - Ignore the page number being rotated for the Gantt chart page.
+- MA asked about how the assessment will work for the project showcase in London. SSH explained that the assessment and demonstration will occur during the oral examination.
+- MA explained the current progress of the project to SSH, including:
+  - The packet processing applications are now one application with command line arguments to choose between which mode of operation to use.
+  - Packet streams have been generated for use with the application.
+  - The application can now read in packets and dispatch them.
+  - A listener application has been created to receive the packets through the IPC mode of operation.
+
+To do:
+- MA to create packet consumers.
+- MA to update GitLab with the most recent progress.
+- SSH to provide written feedback on the interim report.
