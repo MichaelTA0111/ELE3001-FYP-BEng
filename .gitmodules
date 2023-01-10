@@ -4,3 +4,6 @@
 [submodule "DPDK-v20-11-1"]
 	path = src/DPDK-v20-11-1
 	url = git@gitlab.eeecs.qub.ac.uk:40266651/DPDK-v20-11-1.git
+[submodule "src/packet-generator"]
+	path = src/packet-generator
+	url = https://gitlab.eeecs.qub.ac.uk/40266651/packet-generator
