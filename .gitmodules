@@ -7,3 +7,9 @@
 [submodule "src/packet-generator"]
 	path = src/packet-generator
 	url = https://gitlab.eeecs.qub.ac.uk/40266651/packet-generator
+[submodule "src/cheri-networking"]
+	path = src/cheri-networking
+	url = https://gitlab.eeecs.qub.ac.uk/40266651/cheri_networking
+[submodule "src/packet-receiver"]
+	path = src/packet-receiver
+	url = https://gitlab.eeecs.qub.ac.uk/40266651/packet-receiver
