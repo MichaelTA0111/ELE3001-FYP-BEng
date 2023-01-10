@@ -7,7 +7,6 @@ Progress will be sorted chronologically and categorised by month.
 Details of meetings mentioned can be found in the `meetings.md` file.
 
 Names will be abbreviated for more concise writing.
-Unless otherwise stated, assume th
 The initials used are as follows:
 - MA = Michael Allen
 - SSH = Sandra Scott-Hayward
@@ -255,7 +254,7 @@ To do:
 ### Wednesday 23<sup>rd</sup>:
 Progress:
 - MA manually searched through the compilation logs to find differences between the DPDK builds.
-- MA found a bug with the meson build which did not disable drivers when compiling on the Morello board, although the drivers were successfully disabled for the cross-compilation.
+- MA found a bug with the `meson` build which did not disable drivers when compiling on the Morello board, although the drivers were successfully disabled for the cross-compilation.
 - MA manually removed the excess drivers and disabled atomic functionality which allowed the build to successfully complete on the board.
 - MA successfully ran DPDK `helloworld` and `Limelight_DPDK_Build` sample applications on the Morello board. However, this had to be done with flags which imply that only one process can be used.
 - MA found that there are 2 libraries called `contigmem` and `nic_uio` which need to be loaded to the kernel for BSD users of DPDK, which may resolve the errors relating to multiple processes.
@@ -310,3 +309,102 @@ Progress:
 
 To do:
 - MA to start work on the single process CHERI-enabled application.
+
+### Wednesday 7<sup>th</sup>:
+Progress:
+- MA created a new git fork of DPDK for his port to the Morello board.
+- MA created a new git repository for the single process CHERI-enabled application. This project currently only has boilerplate code from example apps.
+- MA researched into `pcap` files and how to create them. MA found a Python library called `pylibpcap` which can be used to interact with these files.
+- MA generated some test `pcap` files which he was able to use as input for an example DPDK application.
+
+### Tuesday 13<sup>th</sup>:
+Progress:
+- MA started work on the single process CHERI-enabled application. This started with reading through and understanding the boilerplate code. MA also cut out unnecessary boilerplate code.
+- MA was able to build and run the application. It currently takes a `pcap` file as an input to receive the custom-made packets from the previous week.
+
+To do:
+- MA to continue working on the application.
+
+### Wednesday 14<sup>th</sup>:
+Progress:
+- MA added a custom command line argument to the single process CHERI-enabled application. This argument currently is very simple because it only adds another print statement.
+- MA created a new `pcap` file with 100,000 packets. After using this file for input, he discovered that only 16 packets were being received and none were being cleared from the buffer, meaning they were not being transmitted.
+- MA attempted to add packet transmission. MA found code which allows this in normal CPU architectures, but does not work with CHERI capabilities.
+- MA unsuccessfully attempted to debug the packet transmission code.
+- MA created a `tap` network device on the Morello board.
+- MA created a Python script to add a payload to the `tap` device to act as an input for the DPDK application. Unfortunately, MA could not populate `tap0` with any packets.
+
+### Thursday 15<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+
+### Friday 16<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+
+### Monday 19<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+
+### Tuesday 20<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+
+### Wednesday 21<sup>st</sup>:
+Progress:
+- MA and PT discussed the project progress before the Christmas break.
+- MA and SSH had a meeting regarding the QUB interim report. SSH provided feedback for improvement.
+- MA fixed a bug in regard to write permissions being removed from CHERI capabilities. This allowed packets to be successfully cleared from the buffer.
+- MA discovered a bug in which after clearing a buffer, it could not be repopulated with a packet of larger size than the previous. This was because of the capability bounds not being able to expand for a larger packet, but they do shrink when a packet of smaller size than the previous is stored.
+- MA increased the buffer count to the maximum according to the Morello hardware limitations, 13,400. This provided sufficient numbers of packets for benchmarking.
+- MA added transmission of capability information across localhost. MA created an accompanying listener program to receive this information.
+
+To do:
+- MA to update interim report according to the received feedback.
+- MA to create command line arguments to toggle between using single process or traditional IPC methodology.
+- MA to create packet consumers to interact with the packets.
+- MA to classify packets according to some metric (e.g. length) so that they are used with one of two consumers.
+- (Stretch goal) MA to add a workaround to allow for larger packets to populate the buffer than what was previously there.
+
+## January
+
+### Tuesday 3<sup>rd</sup>:
+Progress:
+- MA refactored the packet processing application to remove unused code and make the source more readable.
+- MA added command line arguments and environment variables to specify whether to use single process or IPC methodology in the program. The functionality for these arguments has not been added yet, instead they print a string.
+
+To do:
+- MA to add functionality to command line arguments recently introduced.
+
+### Wednesday 4<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+
+### Thursday 5<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+
+### Friday 6<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+- MA refactored the packet generation code to include padding around the packets generated.
+- MA changed the number of buffers in the application to 10,000.
+- MA refactored the command line arguments/environment variables.
+
+### Saturday 7<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+
+### Sunday 8<sup>th</sup>:
+Progress:
+- MA progressed with the QUB interim report.
+
+### Monday 9<sup>th</sup>:
+Progress:
+- MA and SSH had a meeting regarding project progress and the interim report.
+- MA sent SSH the interim report `pdf` for review.
+
+To do:
+- MA to create packet consumers.
+- MA to update GitLab with the most recent progress.
+- SSH to provide written feedback on the interim report.
