@@ -480,3 +480,5 @@ To do:
 - MA to record performance metrics.
 - MA to refactor code for packet processing application.
 - MA to refactor code for listener application.
+- MA to investigate building listener application in hybrid mode.
+- MA to create a double page spread about the project and outcome by February 1<sup>st</sup> for DSbD.
