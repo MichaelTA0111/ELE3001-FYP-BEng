@@ -475,6 +475,7 @@ Progress:
   - The single process mode had approximately 40%, 10%, 0%, and 10% utilisation.
   - The IPC mode had approximately 40%, 15%, 10%, and 15% utilisation.
 - MA created a basic Python script to record CPU usage.
+- MA made only the single process mode of operation adjust the CHERI capability bounds and permissions.
 
 To do:
 - MA to record performance metrics.
@@ -482,3 +483,4 @@ To do:
 - MA to refactor code for listener application.
 - MA to investigate building listener application in hybrid mode.
 - MA to create a double page spread about the project and outcome by February 1<sup>st</sup> for DSbD.
+- MA to validate and likely refactor the CHERI bounds and permissions checks according to the new application structure.
