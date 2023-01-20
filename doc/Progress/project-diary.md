@@ -408,3 +408,75 @@ To do:
 - MA to create packet consumers.
 - MA to update GitLab with the most recent progress.
 - SSH to provide written feedback on the interim report.
+
+### Tuesday 10<sup>th</sup>:
+Progress:
+- MA updated GitLab, including creating repositories where they were missing, updating repositories with the most recent code, and inviting SSH with access rights.
+- SSH provided feedback for interim report.
+- MA reviewed interim report feedback.
+- MA created initial packet consumers for the single process plugin.
+
+To do:
+- MA to update interim report with feedback.
+
+### Thursday 12<sup>th</sup>:
+Progress:
+- MA updated part of the interim report according to the feedback.
+
+To do:
+- MA finish implementing feedback to the interim report.
+
+### Friday 13<sup>th</sup>:
+Progress:
+- MA finished implementing feedback into the interim report.
+- TS scheduled a DSbD cohort check-in for Thursday 4<sup>th</sup> February 2023.
+- MA and TS discussed the best way to implement the consumers. They should be implemented with identical functionality between both modes of operation, which involves creating a common C source/header file to store the consumer code.
+
+To do:
+- MA to review interim report.
+
+### Saturday 14<sup>th</sup>:
+Progress:
+- MA discovered the requirement for a risk management section in the interim report according to the project handbook. MA added this section.
+
+To do:
+- MA to proofread interim report.
+
+### Sunday 15<sup>th</sup>:
+Progress:
+- MA proofread the interim report and corrected errors.
+- MA submitted the interim report
+
+### Tuesday 17<sup>th</sup>:
+Progress:
+- MA fully implemented application options to toggle between single process and IPC modes of operation.
+- MA made the listener application use a command line argument to determine the port number.
+- MA implemented dispatching of packets over separate ports for the IPC method of communication.
+- MA implemented packet consumers in listener application.
+- MA made the listener application terminate automatically after all packets are received.
+
+To do:
+- MA to refactor/clean up code changes from today.
+- MA to make listener send consumer information to packet processing application. The packet processing application also must receive this consumer information.
+- MA to make single process consumer interactions mirror IPC method.
+
+### Friday 20<sup>th</sup>:
+Progress:
+- MA copied the public SSH key from his MacBook to the Morello board to avoid having to enter his password each time.
+- MA added SSH config to his MacBook to include a user and hostname.
+- MA made the listener application send consumer information through sockets.
+- MA made the packet processing application receive consumer information through sockets.
+- MA made single process consumers mirror the method used in IPC.
+- MA restructured the packet processing application to accept more than 10,000 packets as input.
+- MA created a larger packet stream with 100k packets.
+- MA researched ways to monitor CPU usage. The `top` and `vmstat` commands contain useful information, as well as the `htop` package.
+- MA used the `time` terminal command to get an approximate speed difference for the application. With 100k packets, the single process mode took approximately 20s compared to 25s for the IPC mode of operation.
+- MA used the `htop` package to get approximate CPU usage for the application across each of the 4 cores:
+  - The single process mode had approximately 40%, 10%, 0%, and 10% utilisation.
+  - The IPC mode had approximately 40%, 15%, 10%, and 15% utilisation.
+- MA created a basic Python script to record CPU usage.
+
+To do:
+- MA to record performance metrics.
+- MA to refactor code for packet processing application.
+- MA to refactor code for listener application.
