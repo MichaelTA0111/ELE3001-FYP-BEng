@@ -200,7 +200,7 @@ Progress:
 - MA successfully completed the first of two build steps for the DPDK library. This involved successfully using the `meson` program to build DPDK.
 - MA unsuccessfully attempted to complete the second build process for the DPDK library. This involves using the `ninja` program to build the final library.
 - MA spent time debugging the next step of the DPDK build process.
-- MA and TS discovered that someone else from the DSbD Slack had attempted to build the DPDK library in recent months.
+- MA and PT discovered that someone else from the DSbD Slack had attempted to build the DPDK library in recent months.
 
 Blockers:
 - MA expects it will take a long time to debug the `ninja` build process.
@@ -429,8 +429,8 @@ To do:
 ### Friday 13<sup>th</sup>:
 Progress:
 - MA finished implementing feedback into the interim report.
-- TS scheduled a DSbD cohort check-in for Thursday 4<sup>th</sup> February 2023.
-- MA and TS discussed the best way to implement the consumers. They should be implemented with identical functionality between both modes of operation, which involves creating a common C source/header file to store the consumer code.
+- PT scheduled a DSbD cohort check-in for Thursday 4<sup>th</sup> February 2023.
+- MA and PT discussed the best way to implement the consumers. They should be implemented with identical functionality between both modes of operation, which involves creating a common C source/header file to store the consumer code.
 
 To do:
 - MA to review interim report.
@@ -474,7 +474,7 @@ Progress:
 - MA used the `htop` package to get approximate CPU usage for the application across each of the 4 cores:
   - The single process mode had approximately 40%, 10%, 0%, and 10% utilisation.
   - The IPC mode had approximately 40%, 15%, 10%, and 15% utilisation.
-- MA created a basic Python script to record CPU usage.
+- MA created a basic Python script to view CPU usage.
 - MA made only the single process mode of operation adjust the CHERI capability bounds and permissions.
 
 To do:
@@ -484,3 +484,68 @@ To do:
 - MA to investigate building listener application in hybrid mode.
 - MA to create a double page spread about the project and outcome by February 1<sup>st</sup> for DSbD.
 - MA to validate and likely refactor the CHERI bounds and permissions checks according to the new application structure.
+
+### Monday 23<sup>rd</sup>:
+Progress:
+- SSH provided feedback on the interim report.
+
+### Tuesday 24<sup>th</sup>:
+Progress:
+- MA updated the packet generator application to produce a variety of packet lengths, sizes, and consumer counts. The packets are now a power of 2 bytes long.
+- MA updated the packet processing application to determine consumers based on the packet buffer.
+- MA created a `bash` script to record the time taken for running the packet processing application and store the information in the respective text file.
+- MA created a `Python` script to record the CPU utilisation in the background.
+- MA unsuccessfully attempted to make the packet processing application run asynchronously with the CPU utilisation recording.
+- MA created a `bash` script to work alongside the `Python` script which measures CPU utilisation. The `bash` script will automatically start the `Python` script and send the output to the respective file.
+
+To do:
+- MA to use the scripts to record the required metrics.
+- MA to create a `Python` script to parse the recorded data and create corresponding graphs.
+- MA to refactor the scripts created today.
+- MA to add the scripts to `git`.
+
+### Thursday 26<sup>th</sup>:
+Progress:
+- MA researched into generating different packet types. Currently, UDP is being used by the packet processing application.
+
+To do:
+- MA to investigate adding an option to toggle between sending UDP and TCP packets for further performance analysis.
+
+### Friday 27<sup>th</sup>:
+Progress:
+- MA used the scripts to record execution time and CPU utilisation. The scripts had to be called manually for every iteration of using the packet processing application. Metrics were recorded for 128-bit packets for 2 consumers, with packet streams containing 20k, 40k, 60k, 80k, 100k packets. Each test was repeated 5 times to allow for average values to be calculated.
+- MA created Python scripts to create a graph for each of execution time, total CPU utilisation, and per core CPU utilisation for the packet processing application.
+  - Execution time was slightly higher for the IPC mode of operation.
+  - Total CPU utilisation was higher for the IPC mode of operation.
+  - CPU utilisation was approximately the same on the main core for both modes of operation, but the other 3 cores showed higher utilisation with the IPC mode of operation.
+- MA discussed the results with PT.
+  - PT said to focus on the total CPU usage and deprioritise the per core usage.
+  - MA asked about packet processing latency. PT said to add internal timing within the packet processing application to avoid noise from other application functions and calculate the latency more accurately.
+  - MA asked about calculating throughput. PT said to avoid calculating throughput because the single process mode of operation does not have throughput. This is because the CHERI capability pointing to the data from a packet is sent instead of the data itself.
+  - MA asked about removing the print statements for recording the metrics. PT recommended removing them.
+  - PT recommended not focusing on varying the number of consumers in the application for the February 1<sup>st</sup> DSbD deadline.
+  - PT recommended looking into different packet lengths within a packet stream but not necessarily in time for the DSbD deadline.
+- MA removed the print statements from the packet processing application, except for the resulting counters for the consumers.
+- MA attempted to record new performance metrics with the changes included. The lack of print statements took the execution time from dozens of seconds to a fraction of a second depending on the input `pcap` file.
+- Running the old packet streams was too fast for the packet processing application and listener applications to process. Therefore, MA created new packet streams containing much longer packets sizes, ranging from 512 bytes to 32 kilobytes per packet.
+- MA reworked the method for recording the CPU utilisation as there was no longer sufficient execution time to average across every 0.5 seconds.
+- MA reworked the `bash` and `Python` scripts so that only one Python script would need to be called when getting the execution time and CPU utilisation. The execution time and total CPU utilisation would be recorded in one line of one file, instead of separate files like previously.
+- MA recorded new data relating to the packet processing application. Metrics were recorded for 512-bit packets for 2 consumers, with packet streams containing 20k, 40k, 60k, 80k, 100k, 120k, 140k, 160k, 180k, 200k packets. Each test was repeated 7 times to allow for average values to be calculated.
+- MA created a git repository for the `Python` graph generator scripts.
+- MA refactored the `Python` script which was used to generate the graphs to accommodate the new format of recording metrics. This allowed all the separate graph plotting scripts to be condensed into one script.
+- MA added a way to time the packet latency according to the feedback from PT.
+- MA added a new `Python` script to record the packet processing latency calculated by the application. This script also recorded the execution time and total CPU utilisation as before.
+- MA created 2 new `bash` script to iterate through recording the metrics for the packet processing application. These scripts iterated through all packet counts 5 times each and recorded the metrics in respective files.
+- MA reworked the graphing script to accommodate for the packet latency metric.
+- MA discovered and fixed a bug when calculating the packet processing latency for the IPC mode of operation. This involved the packet counter being mistakenly parsed as the time taken to process all packets.
+- MA plotted new graphs with the accurate metrics being recorded.
+
+To do:
+- MA to create diagrams which show how the different modes of operation work. Options include flow charts and UML diagrams for each mode of operation.
+- MA to format the graphs produced in a more neat and tidy manner before submission to DSbD.
+- MA to write up some overarching conclusions about the results obtained.
+- MA to record similar metrics when varying the packet length.
+- MA to organise the `git` repositories for the applications and scripts created.
+- MA to refactor the code within the various scripts created.
+- MA to submit a final report for DSbD by 24<sup>th</sup> February.
+- PT to register for attendance of the demonstration day in London on 22<sup>nd</sup> March. Additionally, the travel arrangements must be determined. 

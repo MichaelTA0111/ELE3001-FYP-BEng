@@ -182,3 +182,36 @@ To do:
 - MA to create packet consumers.
 - MA to update GitLab with the most recent progress.
 - SSH to provide written feedback on the interim report.
+
+### Monday 23<sup>rd</sup> January 2023 (10am) - MA/SSH
+Discussion:
+- SSH discussed the feedback she provided on the interim report.
+  - MA asked about the Gantt chart milestones and SSH explained that they should be for the parent tasks rather than sub-tasks.
+  - SSH asked about the packet sizes used in the table. MA explained that there was no particular reason. SSH recommended packet sizes of 64, 128, and 256 bytes. These are standard packet sizes used in network traffic/processing measurements. It may prove more useful for comparison with other systems than the arbitrary packet sizes previously selected.
+- MA detailed the progress made in the previous week:
+  - MA copied the public SSH key from his MacBook to the Morello board to avoid having to enter his password each time.
+  - MA added SSH config to his MacBook to include a user and hostname.
+  - MA made the listener application send consumer information through sockets.
+  - MA made the packet processing application receive consumer information through sockets.
+  - MA made single process consumers mirror the method used in IPC.
+  - MA restructured the packet processing application to accept more than 10,000 packets as input.
+  - MA created a larger packet stream with 100k packets.
+  - MA researched ways to monitor CPU usage. The `top` and `vmstat` commands contain useful information, as well as the `htop` package.
+  - MA used the `time` terminal command to get an approximate speed difference for the application. With 100k packets, the single process mode took approximately 20s compared to 25s for the IPC mode of operation.
+  - MA used the `htop` package to get approximate CPU usage for the application across each of the 4 cores:
+    - The single process mode had approximately 40%, 10%, 0%, and 10% utilisation.
+    - The IPC mode had approximately 40%, 15%, 10%, and 15% utilisation.
+  - MA created a basic Python script to view CPU usage.
+  - MA made only the single process mode of operation adjust the CHERI capability bounds and permissions.
+- MA demonstrated the application to SSH in real time, including both modes of operation.
+- SSH suggested taking multiple readings of the performance metrics to get an average for the graphs. Also, standard deviation can be presented.
+- SSH explained that the throughput can be calculated from the total execution time of the application. Knowing the total number of packets, the number of bytes per packet, and that 8 bits are in one byte, the throughput can be calculated accordingly.
+- MA mentioned that DSbD provided a deadline for the outcomes of the project by February 1<sup>st</sup> and that he needed to create a double page spread. SSH suggested that they would probably stylise/format the information for the booklet and that some company information would be best provided by PT.
+- MA mentioned that a lot of progress had been made, but the code needed refactoring. SSH suggested using the code as is for initial findings, before repeating the tests after refactoring to measure improvements. SSH suggested indicating in the DSbD demo booklet content that the results presented are preliminary.
+
+To do:
+- MA to correct the packet sizes according to the feedback received.
+- MA to record the performance metrics for a range of packet streams, with different numbers of packets and different sized packets.
+- MA to graph the results of the performance metrics.
+- MA to focus on submitting the required information to DSbD for the February 1<sup>st</sup> deadline.
+- SSH to send MA a link to the PHD opportunities mentioned during the meeting.
