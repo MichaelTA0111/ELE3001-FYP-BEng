@@ -549,3 +549,46 @@ To do:
 - MA to refactor the code within the various scripts created.
 - MA to submit a final report for DSbD by 24<sup>th</sup> February.
 - PT to register for attendance of the demonstration day in London on 22<sup>nd</sup> March. Additionally, the travel arrangements must be determined. 
+
+### Monday 30<sup>th</sup>:
+Progress:
+- MA created a flow diagram to show the DSbD and IPC approaches to the packet processing application.
+- MA created scripts to test packet streams with different packet sizes.
+- MA removed the 16kB and 32kB packet streams due to failures when using them in the application.
+- MA refactored the graphing script to allow for different variables to be graphed correctly. This was followed by graphing the results of varying the packet sizes.
+- MA completed the DSbD demo day form. This involved 10 questions, which were all relatively brief. It awaits proofreading before submission.
+- MA and PT discussed attendance for the DSbD showcase event.
+- MA created a list of what tasks to attempt to complete and in what order for the remainder of the project development.
+
+To do:
+- MA to work through the list of tasks created:
+  1. Clean up code for listener application.
+  2. Configure listener application to compile in hybrid mode.
+  3. Add print option functionality to listener application.
+  4. Add print option functionality to packet processing application.
+  5. Clean up packet processing application codebase.
+  6. Clean up graphing script code.
+  7. Push graphing script repository to GitLab.
+  8. Clean up recording metric scripts.
+  9. Organise git repositories, including adding the performance metric scripts to a relevant repository.
+  10. Re-implement per core CPU utilisation metrics and create graphs.
+  11. Add variable consumer counts to packet processing application.
+  12. Add scripts to record metrics automatically for variable consumer counts.
+  13. Investigate using the same port for sending and receiving within both the packet processing application and listener.
+  14. Investigate adding an option to use TCP to dispatch packets in the IPC mode of operation.
+  15. Back up all git projects to Pytilia's GitHub.
+- MA to submit the DSbD demo day form.
+
+### Tuesday 31<sup>st</sup>:
+Progress:
+- MA received feedback on the DSbD demo day form and updated the form accordingly. The form was successfully submitted.
+- MA installed `cscope` and followed a basic tutorial.
+- MA set up a `.vimrc` file.
+- MA configured the listener application to compile in hybrid mode
+- MA completed some basic refactoring of listener application.
+
+## February
+
+### Wednesday 1<sup>st</sup>:
+Progress:
+- MA watched through the DSbD peer to peer session on compartmentalisation.

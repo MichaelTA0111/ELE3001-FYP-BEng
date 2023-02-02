@@ -13,6 +13,7 @@ The initials used are as follows:
 - PE = Eileen (Pytilia)
 - DCG = Gavin (Digital Catapult)
 - DCD = Darren (Digital Catapult)
+- DCK = Konrad (Digital Catapult)
 - DCP = Paul (Digital Catapult)
 
 ## September
@@ -214,4 +215,21 @@ To do:
 - MA to record the performance metrics for a range of packet streams, with different numbers of packets and different sized packets.
 - MA to graph the results of the performance metrics.
 - MA to focus on submitting the required information to DSbD for the February 1<sup>st</sup> deadline.
-- SSH to send MA a link to the PHD opportunities mentioned during the meeting.
+- SSH to send MA a link to the PhD opportunities mentioned during the meeting.
+
+## February
+
+### Thursday 2<sup>nd</sup> February 2023 (2pm) - MA/PT/DCG/DCD/DCK
+Discussion:
+- DCG asked about current progress. MA explained the packet processing application with two modes of operation - CHERI-based security and IPC-based security with UDP sockets.
+- MA explained that there are performance benefits using CHERI capabilities with regard to packet processing latency and CPU utilisation.
+- DCK asked which ABI was used for the application. MA explained that the packet processing application was built in PureCap and the listener application uses hybrid with no capabilities.
+- DCK asked about the situation with upstreaming the changes. MA said that the git repositories are on a QUB GitLab server but should be backed up onto GitHub. DCK offered help when upstreaming changes.
+- DCK asked about the amount of code changes required to get DPDK running. MA stated the number of lines changed were in the double digits but an exact value was unknown.
+- DCD asked about atomic operations causing issues for DPDK. MA explained the issue was regarding the architecture being detected as 32-bit instead of 64-bit. Also, the network drivers were not disabled correctly.
+- PT explained there has been no regression testing for the DPDK port on other architectures.
+- MA asked about the current situation of compartmentalisation. DCK explained the 2 methods of compartmentalisation, and that one method was available to test on CheriBSD 22.12. However, there is no debugging tool available.
+- It was agreed that there is no expectation to implement compartmentalisation in this project, but it would be interesting for a future discussion.
+
+To do:
+- MA to send the graphs referenced in the meeting by email to the Digital Catapult team.
