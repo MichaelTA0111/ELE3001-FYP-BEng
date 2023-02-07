@@ -604,3 +604,11 @@ Progress:
 - MA removed excessive print statements buried in the DPDK libraries.
 - MA finished refactoring the listener application. A README was also added.
 - MA fixed a bug when attempting to raise a capability bounds fault in the single process mode of operation.
+
+### Tuesday 7<sup>th</sup>:
+Progress:
+- MA and SSH had their bi-weekly meeting.
+- MA booked his attendance with for the DSbD showcase on Wednesday 22<sup>nd</sup> March.
+- MA researched graphing the standard deviation alongside the mean on each of the graphs. A function was found within `matplotlib` to do this.
+- MA refactored the graphing script to reduce code duplication.
+- MA began refactoring the file structure of the packet processing application. The source code was moved into an `src` subdirectory and the packet streams generated were moved into a `packet_streams` subdirectory.
