@@ -142,7 +142,7 @@ Discussion:
 To do:
 - MA to begin work on his new single process CHERI-enabled application.
 
-### Wednesday 21<sup>st</sup> December 2022 (11:30pm) - MA/SSH
+### Wednesday 21<sup>st</sup> December 2022 (11:30am) - MA/SSH
 Discussion:
 - MA showed SSH the current draft of the interim report. SSH provided the following feedback:
   - Change the objectives section into a summary/introduction section with more background information on the project.
@@ -222,10 +222,10 @@ To do:
 ### Thursday 2<sup>nd</sup> February 2023 (2pm) - MA/PT/DCG/DCD/DCK
 Discussion:
 - DCG asked about current progress. MA explained the packet processing application with two modes of operation - CHERI-based security and IPC-based security with UDP sockets.
-- MA explained that there are performance benefits using CHERI capabilities with regard to packet processing latency and CPU utilisation.
+- MA explained that there are performance benefits using CHERI capabilities regarding packet processing latency and CPU utilisation.
 - DCK asked which ABI was used for the application. MA explained that the packet processing application was built in PureCap and the listener application uses hybrid with no capabilities.
 - DCK asked about the situation with upstreaming the changes. MA said that the git repositories are on a QUB GitLab server but should be backed up onto GitHub. DCK offered help when upstreaming changes.
-- DCK asked about the amount of code changes required to get DPDK running. MA stated the number of lines changed were in the double digits but an exact value was unknown.
+- DCK asked about the number of code changes required to get DPDK running. MA stated the number of lines changed was in the double digits but the exact value was unknown.
 - DCD asked about atomic operations causing issues for DPDK. MA explained the issue was regarding the architecture being detected as 32-bit instead of 64-bit. Also, the network drivers were not disabled correctly.
 - PT explained there has been no regression testing for the DPDK port on other architectures.
 - MA asked about the current situation of compartmentalisation. DCK explained the 2 methods of compartmentalisation, and that one method was available to test on CheriBSD 22.12. However, there is no debugging tool available.
@@ -233,3 +233,21 @@ Discussion:
 
 To do:
 - MA to send the graphs referenced in the meeting by email to the Digital Catapult team.
+
+### Tuesday 7<sup>th</sup> February 2023 (10:30am) - MA/SSH
+Discussion:
+- SSH asked about the current situation of the project. MA explained the development was at the point of code cleanup and pushing the changes upstream to git.
+- MA went through the meeting minutes from the Digital Catapult meeting.
+- MA explained the basic features of CHERI compartmentalisation.
+- MA explained that compartmentalisation is not expected to be used in this project. However, if time permits, CheriBSD 22.12 could be installed, and an initial attempt could be run by specifying the relevant linker.
+- SSH asked about throughput not being calculated. MA explained that the CHERI-enabled process doesn't use networking to send packet data; instead, the capability is sent within the same address space. This means the throughput would not be applicable.
+- MA showed SSH the graphs with the recorded metrics of the application. SSH gave some feedback:
+  - There should not be lines connecting the points as if the data is continuous.
+  - The standard deviation should be plotted on the graph in a standard way. There should be a `matplotlib` function which accomplishes this.
+- MA and SSH briefly investigated why the increasing packet size caused the CHERI capabilities to have a higher packet processing latency. It was determined that the most likely reason was that the time taken to read the packets into the buffer was included.
+- SSH suggested that the final report could be started soon. The report can be discussed during meetings for feedback, but written feedback will not be available for this.
+- MA explained his goal is to submit the final report before Easter.
+
+To do:
+- MA to figure out a way to remove the time taken to read into the buffer from the results.
+- MA to work on cleaning up code and pushing changes upstream.

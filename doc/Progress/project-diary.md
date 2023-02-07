@@ -15,6 +15,7 @@ The initials used are as follows:
 - PE = Eileen (Pytilia)
 - DCG = Gavin (Digital Catapult)
 - DCD = Darren (Digital Catapult)
+- DCK = Konrad (Digital Catapult)
 - DCP = Paul (Digital Catapult)
 
 ## September
@@ -592,3 +593,14 @@ Progress:
 ### Wednesday 1<sup>st</sup>:
 Progress:
 - MA watched through the DSbD peer to peer session on compartmentalisation.
+
+### Thursday 2<sup>nd</sup>:
+Progress:
+- Meeting with Digital Catapult team involving MA, PT, DCG, DCD, and DCK.
+
+### Friday 3<sup>rd</sup>:
+Progress:
+- MA added a print option to both the packet processing application and listener application. A command line argument or environment variable determines whether the program should run normally, or in a quiet or verbose mode. Excess print statements were also removed.
+- MA removed excessive print statements buried in the DPDK libraries.
+- MA finished refactoring the listener application. A README was also added.
+- MA fixed a bug when attempting to raise a capability bounds fault in the single process mode of operation.
