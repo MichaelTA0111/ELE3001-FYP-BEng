@@ -612,3 +612,18 @@ Progress:
 - MA researched graphing the standard deviation alongside the mean on each of the graphs. A function was found within `matplotlib` to do this.
 - MA refactored the graphing script to reduce code duplication.
 - MA began refactoring the file structure of the packet processing application. The source code was moved into an `src` subdirectory and the packet streams generated were moved into a `packet_streams` subdirectory.
+
+### Friday 10<sup>th</sup>:
+Progress:
+- MA created a `bash` script to run `cheri-networking` from the source code directory.
+- MA added validation to the inputs for the run script.
+- MA updated the script to time the execution of the program.
+- MA updated the `python` script which records performance metrics. The results are now recorded in a new directory structure.
+- MA updated the scripts to iteratively record performance metrics.
+- MA added all the above scripts to the `cheri-networking` git repository.
+- MA created remote repository on GitLab for the `python` graphing script.
+- MA added an option to `cheri-networking` which allows for no packets to be processed, instead they would only be read into the buffer and cleared.
+- MA created corresponding scripts to automatically record metrics for the application mode which uses no processing.
+- MA changed the number of buffers in `cheri-networking` from 10,000 to 1,000.
+- MA converted the fixed number of iterations into a parameterised value for the metric recording scripts.
+- MA created a bash function to run through all the metric recording scripts in one command.
