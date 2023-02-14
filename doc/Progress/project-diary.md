@@ -609,20 +609,20 @@ Progress:
 ### Tuesday 7<sup>th</sup>:
 Progress:
 - MA and SSH had their bi-weekly meeting.
-- MA booked his attendance with for the DSbD showcase on Wednesday 22<sup>nd</sup> March.
+- MA booked his attendance for the DSbD showcase on Wednesday 22<sup>nd</sup> March.
 - MA researched graphing the standard deviation alongside the mean on each of the graphs. A `matplotlib` function exists for this purpose.
 - MA refactored the graphing script to reduce code duplication.
-- MA began refactoring the file structure of the packet processing application. The source code was moved into an `src` subdirectory and the packet streams generated were moved into a `packet_streams` subdirectory.
+- MA began refactoring the file structure of the packet processing application. The source code was moved into an `src` subdirectory and the generated packet streams were moved into a `packet_streams` subdirectory.
 
 ### Friday 10<sup>th</sup>:
 Progress:
 - MA created a `bash` script to run `cheri-networking` from the source code directory. Validation was implemented for the inputs of this script.
 - PN contacted the Digital Catapult team and secured a 10-minute presentation slot during the demonstration event in London. 12 projects will earn a presentation slot, the total number of projects competing for these slots is unknown.
-- MA updated the script to calculate the execution time of the program relocated it to the `cheri-networking` repository.
+- MA updated the script to calculate the execution time of the program and relocated it to the `cheri-networking` repository.
 - MA updated the `python` script which records performance metrics and added it to git. Also, the results are now recorded in a new directory structure.
 - MA updated the scripts which record performance over a range of packet counts and sizes, for both modes of program operation.
-- MA created remote repository on GitLab for the `python` graphing script.
-- MA added an option to `cheri-networking` which allows for no packets to be processed, instead they would only be read into the buffer and cleared.
+- MA created a remote repository on GitLab for the `python` graphing script.
+- MA added an option to `cheri-networking` which allows for no packets to be processed. Instead, they would only be read into the buffer and cleared.
 - MA created corresponding scripts to automatically record metrics for the new operation mode.
 - MA changed the number of buffers in `cheri-networking` from 10,000 to 1,000.
 - MA converted the fixed number of iterations within the metric recording scripts into a parameterised value.
@@ -630,7 +630,7 @@ Progress:
 - MA updated the repository encompassing the whole project on GitLab. This included fixing issues with updating submodules.
 - MA updated his local git email to his QUB Outlook account.
 - MA updated the graphing script to create graphs for the CHERI and IPC modes of operation, both by themselves and with the no packet processing mode of operation.
-- MA plotted new graphs with adjusted mean packet processing latencies. This eliminates the buffer read in and clear time. The adjusted means are also printed to console for reference. To note, this does not replace the graphs which do not account for these adjustments, but is in addition to them.
+- MA plotted new graphs with adjusted mean packet processing latencies. This eliminates the buffer read-in and clear time. The adjusted means are also printed on the console for reference. They do not replace the graphs that do not account for these adjustments but are in addition to them.
 - MA updated the list of remaining TODOs.
 
 To do:
