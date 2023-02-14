@@ -13,3 +13,6 @@
 [submodule "src/packet-receiver"]
 	path = src/packet-receiver
 	url = https://gitlab.eeecs.qub.ac.uk/40266651/packet-receiver
+[submodule "result-plotter"]
+	path = src/result-plotter
+	url = https://gitlab.eeecs.qub.ac.uk/40266651/result-plotter
