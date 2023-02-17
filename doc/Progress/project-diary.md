@@ -11,9 +11,10 @@ The initials used are as follows:
 - MA = Michael Allen
 - SSH = Sandra Scott-Hayward
 - GC = Gareth Conway
-- PT = Tim (Pytilia)
-- PE = Eileen (Pytilia)
-- PN = Neil (Pytilia)
+- TS = Tim Silversides (Pytilia)
+- EO = Eileen O'Reilly (Pytilia)
+- NS = Neil Sinclair (Pytilia)
+- NC = Nick Connolly
 - DCG = Gavin (Digital Catapult)
 - DCD = Darren (Digital Catapult)
 - DCK = Konrad (Digital Catapult)
@@ -27,17 +28,17 @@ Progress:
 
 ### Friday 30<sup>th</sup>:
 Progress:
-- Technical check-in meeting with MA, PT, DCG, and DCD where a lot of early questions about the project were answered.
+- Technical check-in meeting with MA, TS, DCG, and DCD where a lot of early questions about the project were answered.
 
 To do:
 - MA to unbox the Morello board on Tuesday.
-- PT and MA to meet on Tuesday to give a more in-depth explanation on the work to be undertaken for the project.
+- TS and MA to meet on Tuesday to give a more in-depth explanation on the work to be undertaken for the project.
 
 ## October
 
 ### Tuesday 4<sup>th</sup>:
 Progress:
-- Meeting with MA and PT where a lot of the project background details were explained.
+- Meeting with MA and TS where a lot of the project background details were explained.
 - MA unboxed the PC which contained the Morello board.
 - MA connected relevant cables to power on the PC, along with a monitor, keyboard, and mouse.
 - MA powered on the PC and connected to the console via a debug USB cable connected to his laptop.
@@ -46,11 +47,11 @@ Progress:
 To do:
 - MA to copy relevant binary files onto the mounted microSD card on the Morello board.
 - MA to create a bootable USB drive with a CheriBSD image file.
-- PT to answer questions asked by DCG.
+- TS to answer questions asked by DCG.
 
 ### Wednesday 5<sup>th</sup>:
 Progress:
-- PT answered any outstanding questions from DCG about the project specifications.
+- TS answered any outstanding questions from DCG about the project specifications.
 - MA set the local date and time on the PC, which were the first successful commands issued via the debug connection.
 - MA cloned the prebuilt Morello firmware binaries and copied them into the mounted microSD card.
 - MA unsuccessfully tried to build a disk image for CheriBSD using the official cheribuild Python script.
@@ -124,9 +125,9 @@ Progress:
 
 ### Friday 21<sup>st</sup>:
 Progress:
-- MA, SSH, and PT had a meeting discussing recent progress.
+- MA, SSH, and TS had a meeting discussing recent progress.
 - MA sent completed health and safety form to SSH.
-- PT forwarded a meeting invitation to SSH with the DSbD program team.
+- TS forwarded a meeting invitation to SSH with the DSbD program team.
 
 To do:
 - SSH to provide feedback on the Gantt chart and risks/unknowns documents.
@@ -180,10 +181,10 @@ Progress:
 - MA created an updated Gantt chart taking the feedback from SSH into account.
 - MA and SSH had their fortnightly meeting.
 - MA downloaded the DPDK framework on to the Morello board, however he could not install DPDK due to the `atomic` library being missing.
-- MA, PT, DCG, DCD, and DCP had their monthly meeting.
+- MA, TS, DCG, DCD, and DCP had their monthly meeting.
 - MA joined DPDK Slack group.
 - MA unsuccessfully attempted to find and install the `atomic` library onto the Morello board.
-- MA talked with PE who worked with DPDK and CHERI on the fixed virtual platform (FVP). PE gave a broad overview of some of the problems she encountered when trying to run DPDK. PE sent MA links to relevant GitHub repositories with some small changes made to run DPDK on CHERI-enabled architecture, as well as a confluence page about running DPDK.
+- MA talked with EO who worked with DPDK and CHERI on the fixed virtual platform (FVP). EO gave a broad overview of some of the problems she encountered when trying to run DPDK. EO sent MA links to relevant GitHub repositories with some small changes made to run DPDK on CHERI-enabled architecture, as well as a confluence page about running DPDK.
 
 To do:
 - MA to follow the newly received documentation and attempt to install the DPDK framework again.
@@ -202,7 +203,7 @@ Progress:
 - MA successfully completed the first of two build steps for the DPDK library. This involved successfully using the `meson` program to build DPDK.
 - MA unsuccessfully attempted to complete the second build process for the DPDK library. This involves using the `ninja` program to build the final library.
 - MA spent time debugging the next step of the DPDK build process.
-- MA and PT discovered that someone else from the DSbD Slack had attempted to build the DPDK library in recent months.
+- MA and TS discovered that someone else from the DSbD Slack had attempted to build the DPDK library in recent months.
 
 Blockers:
 - MA expects it will take a long time to debug the `ninja` build process.
@@ -226,7 +227,7 @@ To do:
 
 ### Wednesday 16<sup>th</sup>:
 Progress:
-- MA continued trying to build the DPDK library on the Morello board with assistance from PT.
+- MA continued trying to build the DPDK library on the Morello board with assistance from TS.
 
 ### Thursday 17<sup>th</sup>:
 Progress:
@@ -268,7 +269,7 @@ To do:
 Progress:
 - MA researched into BSD kernel modules and how to use them.
 - MA attempted to build the kernel modules required for DPDK use, however they did not work due to a PureCap issue.
-- PE gave MA copies of the kernel modules from the working FVP to use on the Morello board. The modules did not work because the modules were built for a different version of CheriBSD.
+- EO gave MA copies of the kernel modules from the working FVP to use on the Morello board. The modules did not work because the modules were built for a different version of CheriBSD.
 
 To do:
 - MA to retry attempting to build the kernel module in hybrid rather than PureCap.
@@ -296,18 +297,18 @@ To do:
 ### Monday 5<sup>th</sup>:
 Progress:
 - MA continued trying to debug the errors running the DPDK sample applications with huge pages.
-- MA and PT completed the interim report due for the Digital Catapult team, except for a slideshow/video which is required for one of the questions.
+- MA and TS completed the interim report due for the Digital Catapult team, except for a slideshow/video which is required for one of the questions.
 - MA and SSH had a rescheduled fortnightly meeting discussing progress and what steps to take next.
 
 To do:
-- MA to meet with PT to discuss the future plans for this project and what next steps should be taken.
+- MA to meet with TS to discuss the future plans for this project and what next steps should be taken.
 - MA to create a slideshow for the Digital Catapult interim report and submit the finished report.
 - MA to begin the first draft of the interim report due for QUB for the next meeting with SSH.
 
 ### Tuesday 6<sup>th</sup>:
 Progress:
 - MA created a Keynote presentation for the Digital Catapult interim report and submitted the finished report.
-- MA and PT had a meeting regarding the project timeline/specifications.
+- MA and TS had a meeting regarding the project timeline/specifications.
 
 To do:
 - MA to start work on the single process CHERI-enabled application.
@@ -354,7 +355,7 @@ Progress:
 
 ### Wednesday 21<sup>st</sup>:
 Progress:
-- MA and PT discussed the project progress before the Christmas break.
+- MA and TS discussed the project progress before the Christmas break.
 - MA and SSH had a meeting regarding the QUB interim report. SSH provided feedback for improvement.
 - MA fixed a bug in regard to write permissions being removed from CHERI capabilities. This allowed packets to be successfully cleared from the buffer.
 - MA discovered a bug in which after clearing a buffer, it could not be repopulated with a packet of larger size than the previous. This was because of the capability bounds not being able to expand for a larger packet, but they do shrink when a packet of smaller size than the previous is stored.
@@ -431,8 +432,8 @@ To do:
 ### Friday 13<sup>th</sup>:
 Progress:
 - MA finished implementing feedback into the interim report.
-- PT scheduled a DSbD cohort check-in for Thursday 4<sup>th</sup> February 2023.
-- MA and PT discussed the best way to implement the consumers. They should be implemented with identical functionality between both modes of operation, which involves creating a common C source/header file to store the consumer code.
+- TS scheduled a DSbD cohort check-in for Thursday 4<sup>th</sup> February 2023.
+- MA and TS discussed the best way to implement the consumers. They should be implemented with identical functionality between both modes of operation, which involves creating a common C source/header file to store the consumer code.
 
 To do:
 - MA to review interim report.
@@ -520,13 +521,13 @@ Progress:
   - Execution time was slightly higher for the IPC mode of operation.
   - Total CPU utilisation was higher for the IPC mode of operation.
   - CPU utilisation was approximately the same on the main core for both modes of operation, but the other 3 cores showed higher utilisation with the IPC mode of operation.
-- MA discussed the results with PT.
-  - PT said to focus on the total CPU usage and deprioritise the per core usage.
-  - MA asked about packet processing latency. PT said to add internal timing within the packet processing application to avoid noise from other application functions and calculate the latency more accurately.
-  - MA asked about calculating throughput. PT said to avoid calculating throughput because the single process mode of operation does not have throughput. This is because the CHERI capability pointing to the data from a packet is sent instead of the data itself.
-  - MA asked about removing the print statements for recording the metrics. PT recommended removing them.
-  - PT recommended not focusing on varying the number of consumers in the application for the February 1<sup>st</sup> DSbD deadline.
-  - PT recommended looking into different packet lengths within a packet stream but not necessarily in time for the DSbD deadline.
+- MA discussed the results with TS.
+  - TS said to focus on the total CPU usage and deprioritise the per core usage.
+  - MA asked about packet processing latency. TS said to add internal timing within the packet processing application to avoid noise from other application functions and calculate the latency more accurately.
+  - MA asked about calculating throughput. TS said to avoid calculating throughput because the single process mode of operation does not have throughput. This is because the CHERI capability pointing to the data from a packet is sent instead of the data itself.
+  - MA asked about removing the print statements for recording the metrics. TS recommended removing them.
+  - TS recommended not focusing on varying the number of consumers in the application for the February 1<sup>st</sup> DSbD deadline.
+  - TS recommended looking into different packet lengths within a packet stream but not necessarily in time for the DSbD deadline.
 - MA removed the print statements from the packet processing application, except for the resulting counters for the consumers.
 - MA attempted to record new performance metrics with the changes included. The lack of print statements took the execution time from dozens of seconds to a fraction of a second depending on the input `pcap` file.
 - Running the old packet streams was too fast for the packet processing application and listener applications to process. Therefore, MA created new packet streams containing much longer packets sizes, ranging from 512 bytes to 32 kilobytes per packet.
@@ -535,7 +536,7 @@ Progress:
 - MA recorded new data relating to the packet processing application. Metrics were recorded for 512-bit packets for 2 consumers, with packet streams containing 20k, 40k, 60k, 80k, 100k, 120k, 140k, 160k, 180k, 200k packets. Each test was repeated 7 times to allow for average values to be calculated.
 - MA created a git repository for the `Python` graph generator scripts.
 - MA refactored the `Python` script which was used to generate the graphs to accommodate the new format of recording metrics. This allowed all the separate graph plotting scripts to be condensed into one script.
-- MA added a way to time the packet latency according to the feedback from PT.
+- MA added a way to time the packet latency according to the feedback from TS.
 - MA added a new `Python` script to record the packet processing latency calculated by the application. This script also recorded the execution time and total CPU utilisation as before.
 - MA created 2 new `bash` script to iterate through recording the metrics for the packet processing application. These scripts iterated through all packet counts 5 times each and recorded the metrics in respective files.
 - MA reworked the graphing script to accommodate for the packet latency metric.
@@ -550,7 +551,7 @@ To do:
 - MA to organise the `git` repositories for the applications and scripts created.
 - MA to refactor the code within the various scripts created.
 - MA to submit a final report for DSbD by 24<sup>th</sup> February.
-- PT to register for attendance of the demonstration day in London on 22<sup>nd</sup> March. Additionally, the travel arrangements must be determined. 
+- TS to register for attendance of the demonstration day in London on 22<sup>nd</sup> March. Additionally, the travel arrangements must be determined. 
 
 ### Monday 30<sup>th</sup>:
 Progress:
@@ -559,7 +560,7 @@ Progress:
 - MA removed the 16kB and 32kB packet streams due to failures when using them in the application.
 - MA refactored the graphing script to allow for different variables to be graphed correctly. This was followed by graphing the results of varying the packet sizes.
 - MA completed the DSbD demo day form. This involved 10 questions, which were all relatively brief. It awaits proofreading before submission.
-- MA and PT discussed attendance for the DSbD showcase event.
+- MA and TS discussed attendance for the DSbD showcase event.
 - MA created a list of what tasks to attempt to complete and in what order for the remainder of the project development.
 
 To do:
@@ -597,7 +598,7 @@ Progress:
 
 ### Thursday 2<sup>nd</sup>:
 Progress:
-- Meeting with Digital Catapult team involving MA, PT, DCG, DCD, and DCK.
+- Meeting with Digital Catapult team involving MA, TS, DCG, DCD, and DCK.
 
 ### Friday 3<sup>rd</sup>:
 Progress:
@@ -617,7 +618,7 @@ Progress:
 ### Friday 10<sup>th</sup>:
 Progress:
 - MA created a `bash` script to run `cheri-networking` from the source code directory. Validation was implemented for the inputs of this script.
-- PN contacted the Digital Catapult team and secured a 10-minute presentation slot during the demonstration event in London. 12 projects will earn a presentation slot, the total number of projects competing for these slots is unknown.
+- NS contacted the Digital Catapult team and secured a 10-minute presentation slot during the demonstration event in London. 12 projects will earn a presentation slot, the total number of projects competing for these slots is unknown.
 - MA updated the script to calculate the execution time of the program and relocated it to the `cheri-networking` repository.
 - MA updated the `python` script which records performance metrics and added it to git. Also, the results are now recorded in a new directory structure.
 - MA updated the scripts which record performance over a range of packet counts and sizes, for both modes of program operation.
@@ -640,3 +641,30 @@ To do:
 - MA to attempt to `ninja` install DPDK.
 - MA to clone all git repositories associated with this project to GitHub. Whether they should be pushed specifically to the Pytilia company GitHub is yet to be determined.
 - MA to install CheriBSD 22.12. All data on the Morello board should be backed up beforehand. When installing CheriBSD, screenshots should be taken for documentation purposes.
+
+### Tuesday 14<sup>th</sup>:
+Progress:
+- MA added functionality to the graphing script to output the adjusted packet processing latencies to a CSV file.
+- MA attempted to build DPDK 22.11.1. This was unsuccessful, and the work was determined to have been more substantial than time would allow for.
+- MA began refactoring the commits of his fork of DPDK 20.11.1.
+
+To do:
+- MA to finish refactoring the commits of DPDK 20.11.1.
+
+### Friday 17<sup>th</sup>:
+Progress:
+- NC shared a ported version of DPDK 22.11.1 on GitHub with MA. The packet processing application did not work with this port of DPDK due to missing imports. This may be revisited if time permits.
+- MA completed refactoring the commits of DPDK 20.11.1.
+- MA `ninja` installed DPDK. This completed successfully, but the DPDK imports were not found when attempting to build `cheri_networking` separately from DPDK. This does not have any substantial impact on the project.
+- MA backed up all files from the Morello board to his MacBook.
+- MA flashed a USB flash drive with CheriBSD 22.12.
+- MA began work on the DSbD final report, due Friday 24<sup>th</sup> February.
+- MA imported the repositories from GitLab to GitHub. The repositories are currently public on the personal GitHub account of MA.
+  - Initially, GitHub Importer was used, but this did not work with private GitLab repositories. Instead, the remote was updated from the command line.
+  - Some packet streams were above 100 MB in size which GitHub did not accept. Therefore, commits had to be refactored to exclude the packet streams.
+
+To do:
+- MA to update git submodule links to use GitHub repositories instead of GitLab.
+- MA to create videos/screen captures demonstrating the final version of the packet processing application. These videos must be uploaded online. Links to these videos are required for the DSbD final report.
+- MA to create and upload documentation which contains the results of the project. Link(s) to this documentation is required for the DSbD final report.
+- MA, TS, and NS to complete the remainder of the questions on the DSbD final report.

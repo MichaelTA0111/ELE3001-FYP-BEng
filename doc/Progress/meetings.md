@@ -9,8 +9,10 @@ The initials used are as follows:
 - MA = Michael Allen
 - SSH = Sandra Scott-Hayward
 - GC = Gareth Conway
-- PT = Tim (Pytilia)
-- PE = Eileen (Pytilia)
+- TS = Tim Silversides (Pytilia)
+- EO = Eileen O'Reilly (Pytilia)
+- NS = Neil Sinclair (Pytilia)
+- NC = Nick Connolly
 - DCG = Gavin (Digital Catapult)
 - DCD = Darren (Digital Catapult)
 - DCK = Konrad (Digital Catapult)
@@ -18,25 +20,25 @@ The initials used are as follows:
 
 ## September
 
-### Friday 30<sup>th</sup> September 2022 (10am) - MA/PT/DCG/DCD
+### Friday 30<sup>th</sup> September 2022 (10am) - MA/TS/DCG/DCD
 Discussion:
-- PT stated that Pytilia had received the package containing the Morello board.
-- PT explained that MA is completing this project as part of his degree at university.
-- DCG asked for a brief overview of the project. PT provided the overview of the project including what tasks MA is expected to complete within the given timeframe.
-- DCD asked for details on whether the packet processing application would be focused on ingress or egress. PT explained that the focus would be on ingress, but suggested a possible example use case for egress as well.
-- DCD asked for details on how the packet processing application would be tested. PT explained that the testing would include ensuring buffer overflows cannot occur, but it is unlikely that testing should include trying to access a different compartment in memory altogether. PT also stated that other tests were to be determined.
+- TS stated that Pytilia had received the package containing the Morello board.
+- TS explained that MA is completing this project as part of his degree at university.
+- DCG asked for a brief overview of the project. TS provided the overview of the project including what tasks MA is expected to complete within the given timeframe.
+- DCD asked for details on whether the packet processing application would be focused on ingress or egress. TS explained that the focus would be on ingress, but suggested a possible example use case for egress as well.
+- DCD asked for details on how the packet processing application would be tested. TS explained that the testing would include ensuring buffer overflows cannot occur, but it is unlikely that testing should include trying to access a different compartment in memory altogether. TS also stated that other tests were to be determined.
 
 Actions:
 - Due to time constraints, DCG will email any remaining questions at a future date.
 
 ## October
 
-### Tuesday 4<sup>th</sup> October 2022 (11am) - MA/PT
+### Tuesday 4<sup>th</sup> October 2022 (11am) - MA/TS
 Discussion:
-- PT explained traditional interprocess communications (IPC) methods at a technical level including the advantages and disadvantages associated with them.
-- PT explained how CHERI capabilities redefine traditional IPC methods to have both high security and high speed.
-- PT gave more depth on the project specifications and answered various small questions asked by MA.
-- MA enquired about what else was included in the package containing the Morello board and whether he had to build the PC. PT answered that he was unsure.
+- TS explained traditional interprocess communications (IPC) methods at a technical level including the advantages and disadvantages associated with them.
+- TS explained how CHERI capabilities redefine traditional IPC methods to have both high security and high speed.
+- TS gave more depth on the project specifications and answered various small questions asked by MA.
+- MA enquired about what else was included in the package containing the Morello board and whether he had to build the PC. TS answered that he was unsure.
 
 Actions:
 - MA must unbox the Morello board and assess what is included in the package.
@@ -56,20 +58,20 @@ Actions:
 - MA to set up a project repository on GitLab for documentation and developmental work.
 - MA to set up the network connection on the Morello board.
 
-### Friday 21<sup>st</sup> October 2022 (11am) – MA/SSH/PT
+### Friday 21<sup>st</sup> October 2022 (11am) – MA/SSH/TS
 Discussion:
 - MA explained progress is almost complete for setup of PC, the only exception being investigating into an IDE.
 - MA enquired about the health and safety form. SSH said that everything is low risk and computer based
-- SSH asked for the plan on testing the packet processing applications. PT explained that the details are not yet certain and will depend on the resulting applications. SSH suggested the use of a traffic generator.
+- SSH asked for the plan on testing the packet processing applications. TS explained that the details are not yet certain and will depend on the resulting applications. SSH suggested the use of a traffic generator.
 - MA referred SSH to the Gantt chart and risks/unknowns documents that he created and uploaded to the GitLab repository.
 - MA explained that he has compiled some simple CHERI PureCap applications on the Morello board.
-- PT mentioned the 4-parties communicating with respect to this project.
-- PT asked if SSH wanted to meet with the DSbD program/Digital Catapult team. SSH was interested but did not guarantee attendance for every meeting.
+- TS mentioned the 4-parties communicating with respect to this project.
+- TS asked if SSH wanted to meet with the DSbD program/Digital Catapult team. SSH was interested but did not guarantee attendance for every meeting.
 
 Actions:
 - MA to send SSH completed health and safety form.
 - SSH to provide feedback on the Gantt chart and risks/unknowns documents.
-- PT to forward a meeting invitation to SSH with the DSbD program team.
+- TS to forward a meeting invitation to SSH with the DSbD program team.
 - MA to attempt to set up an IDE on the PC.
 - MA to create another C program to help develop programming skills in that language.
 - MA to investigate the current usability of the DPDK framework on CHERI-enabled architecture.
@@ -89,14 +91,14 @@ Actions:
 - MA to attempt to install DPDK.
 - MA to run DPDK helloworld example application.
 
-### Friday 4<sup>th</sup> November 2022 (1:30pm) – MA/PT/DCG/DCD/DCP
+### Friday 4<sup>th</sup> November 2022 (1:30pm) – MA/TS/DCG/DCD/DCP
 Discussion:
-- DCP introduced himself and asked for a project overview. MA and PT explained the project outline including the 2 packet processing applications which are to be developed and that they will have their performances compared to one another.
+- DCP introduced himself and asked for a project overview. MA and TS explained the project outline including the 2 packet processing applications which are to be developed and that they will have their performances compared to one another.
 - DCG asked about current progress since the first check-in meeting. MA explained that the board was set up with CheriBSD OS installed, network connectivity established, and programs such as Vim have been installed.
-- DCD asked about what testing will be done for the applications. PT explained that the focus will be on incoming packets which could either be maliciously crafted or poorly written, so there will be artificially crafted malicious packets used for testing. There will be checks to ensure that no access is granted beyond the bounds specified in the CHERI capabilities and that any permissions are enforced correctly, e.g. incoming packets will always have the executable permission removed.
+- DCD asked about what testing will be done for the applications. TS explained that the focus will be on incoming packets which could either be maliciously crafted or poorly written, so there will be artificially crafted malicious packets used for testing. There will be checks to ensure that no access is granted beyond the bounds specified in the CHERI capabilities and that any permissions are enforced correctly, e.g. incoming packets will always have the executable permission removed.
 - MA explained that he has been able to compile some sample C applications on the board. DCP asked if the applications were hybrid or PureCap and MA said they have been PureCap.
-- MA and PT asked about the interim report due for the DSbD team. DCG explained that more information including the template to follow will be emailed the following Monday.
-- DCG recommended joining the DSbD Slack group if not already a part of it. PT is a member but MA is not.
+- MA and TS asked about the interim report due for the DSbD team. DCG explained that more information including the template to follow will be emailed the following Monday.
+- DCG recommended joining the DSbD Slack group if not already a part of it. TS is a member but MA is not.
 
 Actions:
 - MA to join DSbD Slack group.
@@ -121,23 +123,23 @@ Discussion:
 - MA discussed the progress to date with SSH. DPDK can run using one process however, it cannot run multiple processes simultaneously.
 - MA explained that the debugging process had been taking much longer than expected. SSH and MA agreed that the number of hours per week spent on this process has been more than desired.
 - SSH asked for a comparison between the current progress and the scheduled timeline. MA explained that the expected progress for October and November had mostly been completed in October, however the December progress was blocked by porting DPDK which was not accounted for in the initial timeline and was given an estimate of 2 weeks in the Gantt chart.
-- MA explained that the main task for December could be completed with the current state of the DPDK library however the January task could not. SSH suggested MA meet with PT in order to discuss any potential restructuring required in the project timeline.
+- MA explained that the main task for December could be completed with the current state of the DPDK library however the January task could not. SSH suggested MA meet with TS in order to discuss any potential restructuring required in the project timeline.
 - MA showed the sample DPDK applications in use on the Morello board.
-- SSH asked about the sample DPDK application created by PE and how it differs from the single process application to be created by MA. MA explained that this needs discussion with PT, however a new application will need to be created.
+- SSH asked about the sample DPDK application created by EO and how it differs from the single process application to be created by MA. MA explained that this needs discussion with TS, however a new application will need to be created.
 - MA asked about the interim report due for QUB. SSH explained that because the deadline is the 16<sup>th</sup> January, MA should have an initial outline ready for the next meeting and have a completed draft for when the Christmas break ends for feedback.
 
 To do:
-- MA to meet with PT about the project timeline and discuss whether any changes need to be made.
+- MA to meet with TS about the project timeline and discuss whether any changes need to be made.
 - MA to start work on the QUB interim report.
 
-### Tuesday 6<sup>th</sup> December 2022 (12:00pm) - MA/PT
+### Tuesday 6<sup>th</sup> December 2022 (12:00pm) - MA/TS
 Discussion:
-- MA asked about the project timeline and if it was still achievable. PT explained that the goals are still realistic.
-- MA and PT discussed the issue with multiple processes using DPDK. PT suggested that the January goal for using an IPC model could still be achieved because only one DPDK process needs to be used, even though multiple processes need to run on the PC.
-- MA asked for some clarification on what is expected with the IPC model application. PT explained that there would need to be consumer applications which communicate with the DPDK application. PT recommended using UDP for this.
-- MA asked whether the IPC application should be compiled in PureCap or Hybrid. PT said that either would be acceptable for the project.
-- MA asked about how the single process application which he is to create differs from the example application created by PE. PT stated that MA only needs to create a new application which will make a fair comparison for the IPC based application that he also has to create.
-- PT explained that using a `pcap` file for traffic is sufficient, however interacting with live traffic can be a stretch goal if time permits.
+- MA asked about the project timeline and if it was still achievable. TS explained that the goals are still realistic.
+- MA and TS discussed the issue with multiple processes using DPDK. TS suggested that the January goal for using an IPC model could still be achieved because only one DPDK process needs to be used, even though multiple processes need to run on the PC.
+- MA asked for some clarification on what is expected with the IPC model application. TS explained that there would need to be consumer applications which communicate with the DPDK application. TS recommended using UDP for this.
+- MA asked whether the IPC application should be compiled in PureCap or Hybrid. TS said that either would be acceptable for the project.
+- MA asked about how the single process application which he is to create differs from the example application created by EO. TS stated that MA only needs to create a new application which will make a fair comparison for the IPC based application that he also has to create.
+- TS explained that using a `pcap` file for traffic is sufficient, however interacting with live traffic can be a stretch goal if time permits.
 
 To do:
 - MA to begin work on his new single process CHERI-enabled application.
@@ -207,7 +209,7 @@ Discussion:
 - MA demonstrated the application to SSH in real time, including both modes of operation.
 - SSH suggested taking multiple readings of the performance metrics to get an average for the graphs. Also, standard deviation can be presented.
 - SSH explained that the throughput can be calculated from the total execution time of the application. Knowing the total number of packets, the number of bytes per packet, and that 8 bits are in one byte, the throughput can be calculated accordingly.
-- MA mentioned that DSbD provided a deadline for the outcomes of the project by February 1<sup>st</sup> and that he needed to create a double page spread. SSH suggested that they would probably stylise/format the information for the booklet and that some company information would be best provided by PT.
+- MA mentioned that DSbD provided a deadline for the outcomes of the project by February 1<sup>st</sup> and that he needed to create a double page spread. SSH suggested that they would probably stylise/format the information for the booklet and that some company information would be best provided by TS.
 - MA mentioned that a lot of progress had been made, but the code needed refactoring. SSH suggested using the code as is for initial findings, before repeating the tests after refactoring to measure improvements. SSH suggested indicating in the DSbD demo booklet content that the results presented are preliminary.
 
 To do:
@@ -219,7 +221,7 @@ To do:
 
 ## February
 
-### Thursday 2<sup>nd</sup> February 2023 (2pm) - MA/PT/DCG/DCD/DCK
+### Thursday 2<sup>nd</sup> February 2023 (2pm) - MA/TS/DCG/DCD/DCK
 Discussion:
 - DCG asked about current progress. MA explained the packet processing application with two modes of operation - CHERI-based security and IPC-based security with UDP sockets.
 - MA explained that there are performance benefits using CHERI capabilities regarding packet processing latency and CPU utilisation.
@@ -227,7 +229,7 @@ Discussion:
 - DCK asked about the situation with upstreaming the changes. MA said that the git repositories are on a QUB GitLab server but should be backed up onto GitHub. DCK offered help when upstreaming changes.
 - DCK asked about the number of code changes required to get DPDK running. MA stated the number of lines changed was in the double digits but the exact value was unknown.
 - DCD asked about atomic operations causing issues for DPDK. MA explained the issue was regarding the architecture being detected as 32-bit instead of 64-bit. Also, the network drivers were not disabled correctly.
-- PT explained there has been no regression testing for the DPDK port on other architectures.
+- TS explained there has been no regression testing for the DPDK port on other architectures.
 - MA asked about the current situation of compartmentalisation. DCK explained the 2 methods of compartmentalisation, and that one method was available to test on CheriBSD 22.12. However, there is no debugging tool available.
 - It was agreed that there is no expectation to implement compartmentalisation in this project, but it would be interesting for a future discussion.
 
