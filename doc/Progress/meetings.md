@@ -253,3 +253,22 @@ Discussion:
 To do:
 - MA to figure out a way to remove the time taken to read into the buffer from the results.
 - MA to work on cleaning up code and pushing changes upstream.
+
+### Monday 20<sup>th</sup> February 2023 (10am) - MA/SSH
+Discussion:
+- SSH asked about deadlines. MA explained that the DSbD final report is due on Friday 24<sup>th</sup> February, which will require most of this week's time investment.
+- MA explained that the QUB final report has not been started yet, but should start at the beginning of March.
+- MA asked about obtaining a sample report. SSH explained that a specific sample report will not be provided, but GC should be contacted in case generic samples are available.
+- MA asked about more regular meetings (e.g. weekly) as the final report is being written for guidance. SSH explained that availability would be an issue. However, it was agreed to rearrange for extra meetings on the 2<sup>nd</sup> and 13<sup>th</sup> of March.
+- SSH explained that MA should email any extra questions about the final report.
+- MA explained he is attempting to organise a practice presentation at Pytilia before the official DSbD and QUB presentations.
+- MA and SSH discussed when the oral examination would occur during the week commencing Monday 20<sup>th</sup> March. SSH explained that the moderator is currently unknown, so the schedule cannot be confirmed. MA explained that he is unavailable on Wednesday due to the industrial showcase and would prefer to avoid Thursday as well. The stated preference is Friday if available.
+- SSH asked MA to remember to update the GitLab repositories before the final submission deadline.
+- MA asked about potential plagiarism issues relating to the code being present on both GitLab and a public GitHub. SSH explained that plagiarism should not be an issue, but MA should make a note of this on the final report.
+
+To do:
+- MA to complete the DSbD final report.
+- MA to continue attempting to organise a practice presentation.
+- SSH to schedule meetings for the 2<sup>nd</sup> and 13<sup>th</sup> March.
+- MA to contact GC for potential sample reports.
+- MA to create a template for the final report by the next meeting.
