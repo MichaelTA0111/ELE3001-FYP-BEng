@@ -676,12 +676,38 @@ Progress:
 ### Tuesday 21<sup>st</sup>:
 Progress:
 - MA changed the output format of OBS recordings from `.mkv` to `.mp4` because YouTube does not support the former format.
-- MA created a YouTube account to upload the videos to.
-- MA listed what recordings need created:
-  - Build DPDK and run `helloworld`.
-  - Generate packets.
-  - Run `cheri_networking` in both standard operation modes and show the same consumer outputs.
-  - Run `cheri_networking` in both standard operation modes with the quiet flag and show the difference in packet processing latency.
-  - Demonstrate validation on the run script for `cheri_networking`.
-  - Demonstrate CHERI bounds and permissions violations.
+- MA created a YouTube channel to upload the videos to.
+- MA created a list of what recordings to take:
+  - Morello DPDK Build
+  - Generate Packet Streams
+  - Validation For Run Script
+  - Operation Mode Comparison
+  - Speed Comparison
+  - Bounds Validation
+  - Permissions Validation
+  - Metric Recording Script
 - MA recorded some draft screen recordings and tested uploading one to YouTube.
+
+To do:
+- MA to complete minor refactoring of the outputs shown in the packet processing application.
+- MA to re-record the videos with an understanding of what to include.
+- MA to create a document to show the accomplishments of the project.
+
+### Wednesday 22<sup>nd</sup>:
+Progress:
+- MA contacted GC about viewing sample reports. GC responded that they may be provided by the supervisor. MA forwarded this to SSH.
+
+### Thursday 23<sup>rd</sup>:
+Progress:
+- SSH confirmed that she would not send a sample report to MA based on the reasons mentioned previously.
+
+### Friday 24<sup>th</sup>:
+Progress:
+- MA completed all the questions in the DSbD final report, except for questions 12, 22, 23(i,ii), and 24 which TS completed. NS reviewed the answers given in the final report.
+- MA completed some minor refactoring of the packet processing application.
+- MA recorded and uploaded the list of videos to YouTube.
+- MA created a 5-page document showing the results from the project. MA set up DropBox on his MacBook to upload the document for sharing as part of the report.
+
+To do:
+- MA to prepare the contents of the QUB final report.
+- MA to begin preparation for the presentation/demonstration.
