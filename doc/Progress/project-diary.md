@@ -668,3 +668,20 @@ To do:
 - MA to create videos/screen captures demonstrating the final version of the packet processing application. These videos must be uploaded online. Links to these videos are required for the DSbD final report.
 - MA to create and upload documentation which contains the results of the project. Link(s) to this documentation is required for the DSbD final report.
 - MA, TS, and NS to complete the remainder of the questions on the DSbD final report.
+
+### Monday 20<sup>th</sup>:
+Progress:
+- MA installed and configured OBS on his MacBook. A window capture was set up to record the terminal.
+
+### Tuesday 21<sup>st</sup>:
+Progress:
+- MA changed the output format of OBS recordings from `.mkv` to `.mp4` because YouTube does not support the former format.
+- MA created a YouTube account to upload the videos to.
+- MA listed what recordings need created:
+  - Build DPDK and run `helloworld`.
+  - Generate packets.
+  - Run `cheri_networking` in both standard operation modes and show the same consumer outputs.
+  - Run `cheri_networking` in both standard operation modes with the quiet flag and show the difference in packet processing latency.
+  - Demonstrate validation on the run script for `cheri_networking`.
+  - Demonstrate CHERI bounds and permissions violations.
+- MA recorded some draft screen recordings and tested uploading one to YouTube.
