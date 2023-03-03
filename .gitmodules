@@ -1,18 +1,18 @@
 [submodule "student-grades"]
 	path = src/student-grades
-	url = git@gitlab.eeecs.qub.ac.uk:40266651/student-grades.git
-[submodule "DPDK-v20-11-1"]
-	path = src/DPDK-v20-11-1
-	url = git@gitlab.eeecs.qub.ac.uk:40266651/DPDK-v20-11-1.git
-[submodule "src/packet-generator"]
+	url = git@github.com:MichaelTA0111/Student-Grades.git
+[submodule "dpdk-morello"]
+	path = src/dpdk-morello
+	url = git@github.com:MichaelTA0111/DPDK-20.11.1-Morello.git
+[submodule "packet-generator"]
 	path = src/packet-generator
-	url = https://gitlab.eeecs.qub.ac.uk/40266651/packet-generator
-[submodule "src/cheri-networking"]
+	url = git@github.com:MichaelTA0111/Packet-Generator.git
+[submodule "cheri-networking"]
 	path = src/cheri-networking
-	url = https://gitlab.eeecs.qub.ac.uk/40266651/cheri_networking
-[submodule "src/packet-receiver"]
+	url = git@github.com:MichaelTA0111/CHERI-Networking.git
+[submodule "packet-receiver"]
 	path = src/packet-receiver
-	url = https://gitlab.eeecs.qub.ac.uk/40266651/packet-receiver
+	url = git@github.com:MichaelTA0111/Packet-Receiver.git
 [submodule "result-plotter"]
 	path = src/result-plotter
-	url = https://gitlab.eeecs.qub.ac.uk/40266651/result-plotter
+	url = git@github.com:MichaelTA0111/Result-Plotter.git
