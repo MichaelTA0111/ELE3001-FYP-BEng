@@ -272,3 +272,28 @@ To do:
 - SSH to schedule meetings for the 2<sup>nd</sup> and 13<sup>th</sup> March.
 - MA to contact GC for potential sample reports.
 - MA to create a template for the final report by the next meeting.
+
+## March
+
+### Thursday 2<sup>nd</sup> March 2023 (3pm) - MA/SSH
+Discussion:
+- MA asked who marks the remaining project assessments. SSH explained that she was unsure about this year, but traditionally both the supervisor and moderator would contribute 50% of the marks for the oral and final report. The supervisor alone marks the interim report.
+- SSH explained that the moderator of this project has a future project planned for CheriBSD.
+- MA explained that he will mainly be focusing on preparing the presentation. This is because he will likely have to do a practice presentation for the industrial partners in advance of the official dates.
+- SSH provided feedback on the report plan made by MA:
+  - A list of abbreviations may be included. Abbreviations should continue to be expanded at first use even if this table is included.
+  - Lists of figures and tables may be included but are unnecessary.
+  - Include a short piece acknowledging the industrial partners in the introduction of the project.
+  - Include a section for the project motivation and example use cases.
+  - If the Gantt chart is too big, include 2 images showing separate tasks from the Gantt chart.
+  - Include a section, possibly as a part of the project plan, showing the required work to be done to meet the project objectives.
+  - Do not be overly verbose in the different sections of the report.
+  - Avoid describing all the work completed, focus on the high-level overview and final product created.
+  - Make use of appendices and GitLab for scripts/code.
+  - Sections from the interim report can be reused but should be updated to fit the final report structure with more up-to-date information.
+  - Include a section describing the testing methodologies that were used.
+- SSH said that any further questions can be emailed or asked during the next meeting.
+
+To do:
+- MA to prepare the presentation.
+- MA to start work on the QUB final report.

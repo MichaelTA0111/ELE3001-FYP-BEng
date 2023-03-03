@@ -711,3 +711,21 @@ Progress:
 To do:
 - MA to prepare the contents of the QUB final report.
 - MA to begin preparation for the presentation/demonstration.
+
+### Tuesday 28<sup>th</sup>:
+Progress:
+- MA began planning the sections/layout of the QUB final report. This included searching through the project handbook.
+
+To do:
+- MA to finish planning the sections of the report.
+- MA to plan the content for the presentation/oral examination.
+
+## March
+
+### Wednesday 1<sup>st</sup>:
+Progress:
+- MA finished planning the QUB final report.
+
+### Thursday 2<sup>nd</sup>:
+Progress:
+- MA began formatting the QUB final report on LaTeX.
