@@ -297,3 +297,20 @@ Discussion:
 To do:
 - MA to prepare the presentation.
 - MA to start work on the QUB final report.
+
+### Monday 13<sup>th</sup> March 2023 (10:30am) - MA/SSH
+Discussion:
+- MA showed the initial draft of the oral presentation. SSH gave the following feedback:
+  - Begin with the project motivation instead of the background information.
+  - Ensure the presentation time does not exceed the time limit of 15 minutes.
+  - The current count of over 20 slides implies it will run long, some may need to be cut out. The general recommendation is between 5 and 8 slides.
+  - Not as much detail needs to be given in the oral as in the final report.
+  - Do not narrate the demonstration videos in a distracting way. Some narration is OK if it complements the video.
+  - Attempt to recreate the graphs with the x-axes lining up with the data points. The font size may need adjusting to allow this to occur neatly.
+  - The concluding remarks can be presented as personal work completed.
+- MA explained that he would be focusing on coursework in the next week so there will be little progress.
+- SSH explained that she may have to cancel her attendance at the next meeting and/or oral at short notice. Unless stated otherwise, meetings that are currently scheduled will proceed.
+
+To do:
+- MA to update the presentation according to the feedback given.
+- SSH to organise potential alternative arrangements with GC for the oral.

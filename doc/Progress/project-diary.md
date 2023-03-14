@@ -728,4 +728,30 @@ Progress:
 
 ### Thursday 2<sup>nd</sup>:
 Progress:
-- MA began formatting the QUB final report on LaTeX.
+- MA added the required formatting in LaTeX for the QUB final report.
+
+### Friday 3<sup>rd</sup>:
+Progress:
+- MA fixed the git submodules for the remote repositories on GitHub.
+- MA changed the remote URLs for the git repositories to accommodate both the GitHub and GitLab repositories.
+- MA began planning the QUB presentation.
+
+### Tuesday 7<sup>rd</sup>:
+Progress:
+- MA finalised the plan for QUB presentation.
+
+### Friday 10<sup>th</sup>:
+Progress:
+- MA worked on QUB presentation.
+
+### Sunday 12<sup>th</sup>:
+Progress:
+- MA finished initial draft of QUB presentation.
+
+### Monday 13<sup>th</sup>:
+Progress:
+- MA updated the presentation according to the feedback received.
+
+### Tuesday 14<sup>th</sup>:
+Progress:
+- MA updated the graphs with more useful axis scales.
