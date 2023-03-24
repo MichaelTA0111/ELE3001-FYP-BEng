@@ -672,6 +672,7 @@ To do:
 ### Monday 20<sup>th</sup>:
 Progress:
 - MA installed and configured OBS on his MacBook. A window capture was set up to record the terminal.
+- MA and SSH had a supervisor meeting.
 
 ### Tuesday 21<sup>st</sup>:
 Progress:
@@ -729,6 +730,7 @@ Progress:
 ### Thursday 2<sup>nd</sup>:
 Progress:
 - MA added the required formatting in LaTeX for the QUB final report.
+- MA and SSH had a supervisor meeting.
 
 ### Friday 3<sup>rd</sup>:
 Progress:
@@ -750,8 +752,37 @@ Progress:
 
 ### Monday 13<sup>th</sup>:
 Progress:
+- MA and SSH had a supervisor meeting.
 - MA updated the presentation according to the feedback received.
 
 ### Tuesday 14<sup>th</sup>:
 Progress:
 - MA updated the graphs with more useful axis scales.
+- MA gave a presentation on DSbD and this project at Pytilia. Feedback was mostly positive.
+
+### Saturday 18<sup>th</sup>:
+Progress:
+- SSH cancelled the supervisor meeting scheduled for Monday 20<sup>th</sup> March.
+- SSH contacted GC regarding future supervision of this project.
+
+### Monday 20<sup>th</sup>:
+Progress:
+- MA updated the final report to add an abstract and acknowledgements.
+
+### Tuesday 21<sup>st</sup>:
+Progress:
+- MA worked on updating the oral presentation.
+- SSH confirmed that GC will take over supervision of this project.
+
+### Wednesday 22<sup>nd</sup>:
+Progress:
+- MA and NS attended the DSbD demo day event. NS gave the presentation and MA answered questions on the project.
+- GC postponed the oral examination scheduled for Friday 24<sup>th</sup> March.
+
+### Thursday 23<sup>rd</sup>:
+Progress:
+- GC reorganised the oral examination for Wednesday 29<sup>th</sup> March at 2pm in the Ashby building, room 08.023.
+
+### Friday 24<sup>th</sup>:
+Progress:
+- MA refined the QUB presentation and cut down the content to fit within the 10-15 minute range.
