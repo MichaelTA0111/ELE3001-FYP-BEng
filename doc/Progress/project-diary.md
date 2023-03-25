@@ -776,7 +776,7 @@ Progress:
 
 ### Wednesday 22<sup>nd</sup>:
 Progress:
-- MA and NS attended the DSbD demo day event. NS gave the presentation and MA answered questions on the project.
+- MA and NS attended the DSbD demo day event. NS delivered the presentation and MA answered questions on the project.
 - GC postponed the oral examination scheduled for Friday 24<sup>th</sup> March.
 
 ### Thursday 23<sup>rd</sup>:
@@ -786,3 +786,7 @@ Progress:
 ### Friday 24<sup>th</sup>:
 Progress:
 - MA refined the QUB presentation and cut down the content to fit within the 10-15 minute range.
+
+### Saturday 25<sup>th</sup>:
+Progress:
+- MA added slides to the QUB presentation relating to the DPDK port.
