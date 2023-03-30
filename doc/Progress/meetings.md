@@ -9,6 +9,7 @@ The initials used are as follows:
 - MA = Michael Allen
 - SSH = Sandra Scott-Hayward
 - GC = Gareth Conway
+- VS = Vishal Sharma
 - TS = Tim Silversides (Pytilia)
 - EO = Eileen O'Reilly (Pytilia)
 - NS = Neil Sinclair (Pytilia)
@@ -314,3 +315,14 @@ Discussion:
 To do:
 - MA to update the presentation according to the feedback given.
 - SSH to organise potential alternative arrangements with GC for the oral.
+
+### Wednesday 29<sup>th</sup> March 2023 (2pm) - MA/GC/VS
+Discussion:
+- MA delivered the oral presentation to GC and VS. The presentation lasted about 20 minutes.
+- VS asked questions about the project relating mainly to the technical details, which MA answered.
+- GC asked questions which were more broad about the project including the industrial use cases and where MA went beyond the specification.
+- GC advised MA make it clear which sections go beyond the specification in the final report.
+- MA asked about submitting the project through TurnItIn. GC explained that this happens automatically through Canvas.
+- MA asked about potential plagiarism issues between the interim and final reports. GC explained that the interim report did not get submitted through TurnItIn so it shouldn't be an issue, however it would be safe to include a reference to the interim report just in case.
+- MA asked about the Megaw Memorial Lecture. GC recommended MA to express interest. The presentation would have to be less technical and more relevant to industrial use cases if MA is successful with his application.
+- GC offered to answer any emails or have a meeting in person or virtually with MA relating to the final report if required.

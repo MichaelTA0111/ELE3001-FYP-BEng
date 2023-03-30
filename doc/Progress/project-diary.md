@@ -11,6 +11,7 @@ The initials used are as follows:
 - MA = Michael Allen
 - SSH = Sandra Scott-Hayward
 - GC = Gareth Conway
+- VS = Vishal Sharma
 - TS = Tim Silversides (Pytilia)
 - EO = Eileen O'Reilly (Pytilia)
 - NS = Neil Sinclair (Pytilia)
@@ -790,3 +791,26 @@ Progress:
 ### Saturday 25<sup>th</sup>:
 Progress:
 - MA added slides to the QUB presentation relating to the DPDK port.
+
+### Monday 27<sup>th</sup>:
+Progress:
+- MA noticed an announcement on Canvas which stated the presentation should last approximately 20 minutes. MA had previously seen 10-15 minutes as the range.
+- MA expanded on the DPDK port content within the presentation.
+
+To do:
+- MA to make the presentation last approximately 20 minutes.
+
+### Tuesday 28<sup>th</sup>:
+Progress:
+- MA added more content to the QUB presentation including:
+  - More detailed background information on CHERI and Morello.
+  - Background information on DPDK.
+  - Background information relating to Pytilia's previous work with DSbD.
+  - Information relating to the buffer validation changes made.
+  - A screenshot of the DPDK helloworld application.
+- MA rewrote the parts of the presentation script so that the total time was approximately 20 minutes.
+
+### Wednesday 29<sup>th</sup>:
+Progress:
+- MA rehearsed the presentation and tidied up little aspects of it.
+- MA delivered the oral presentation to GC and VS.
