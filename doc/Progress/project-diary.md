@@ -814,3 +814,17 @@ Progress:
 Progress:
 - MA rehearsed the presentation and tidied up little aspects of it.
 - MA delivered the oral presentation to GC and VS.
+
+To do:
+- MA to apply for the Megaw Memorial Lecture.
+- MA to complete the QUB final report.
+
+### Thursday 30<sup>th</sup>:
+Progress:
+- MA applied for the Megaw Memorial Lecture. The expression of interest was received but more details will follow.
+
+## April
+
+### Sunday 2<sup>nd</sup>:
+Progress:
+- MA completed a new draft plan for the QUB final report.
