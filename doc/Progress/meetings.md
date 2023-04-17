@@ -326,3 +326,17 @@ Discussion:
 - MA asked about potential plagiarism issues between the interim and final reports. GC explained that the interim report did not get submitted through TurnItIn so it shouldn't be an issue, however it would be safe to include a reference to the interim report just in case.
 - MA asked about the Megaw Memorial Lecture. GC recommended MA to express interest. The presentation would have to be less technical and more relevant to industrial use cases if MA is successful with his application.
 - GC offered to answer any emails or have a meeting in person or virtually with MA relating to the final report if required.
+
+## April
+
+### Thursday 6<sup>th</sup> April 2023 (6pm) - MA/GC
+Discussion:
+- MA asked for help on writing the final report. GC explained the report mark scheme from the project handbook and where to focus on.
+- GC explained that approximately 3 or 4 points should be explained well in the report, including how they relate and add to the specification, why they were done, and how they were tested and validated.
+- GC explained that the best way to write up a section of the report involves planning what to write first in bullet points before writing it all out.
+- GC said it is best to write out the bulk of the report content before sections like the abstract, introduction, conclusion, etc. The report does not need to be written in sequential order of the sections.
+- MA asked about plagiarism from the interim report. GC said to reference the report and expand or change parts of it. Provided there are some changes, the content should receive marks in the final report.
+- MA asked about whether the Gantt chart should contain the expected or actual timeline. GC said to include the expected timeline and critically analyse where the progress deviated from the schedule and why.
+
+To do:
+- MA to contact GC again on either Tuesday or Wednesday to give an update on progress.
